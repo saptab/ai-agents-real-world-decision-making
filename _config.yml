@@ -1,0 +1,60 @@
+# Site settings
+
+repository: saptab/ai-agents-real-world-decision-making
+
+course_name: "CSc 59866-E: Senior Project I - AI Agents for Decision Making in the Real World"
+course_description: "Artificial Intelligence (AI) Agents are special autonomous models that can take reasonable actions in the real world. The class objective is to design and implement Agentic Machine Learning Algorithms that allow AI to observe their environment, take an action that impacts the environment, and find qualitative and quantitative approaches (including receiving environmental feedback) to evaluate the goodness of the AI's decision making. Students will be training and building Multimodal AI Agents (e.g., Large Language Models or LLM Agents, Audio-Vision-Language Models or AVLM Agents, Robotic Agents, Autonomous Transportation Agents, AR/VR/XR Agents, Scientific Discovery Agents, Agents that orchestrate Hardware Architectures/Systems,/Networks and other Multimodal AI Agents) in this project-oriented course.\n\nThe course will introduce the basics of training, finetuning and inferencing of AI Agents where students will develop new coding, algorithmic, theoretical, systems-level and interdisciplinary application skills for Research and Development. Students will be specializing in AI Agent algorithms, and will have the ability to determine when to follow a Multi-Agent AI solution vs a Single-Agent AI solution. Students will also develop the skills to understand when single-processing is more efficient vs when multi-processing and distributed processing is more effective for deploying such AI Agents in the real-world. This involves an insight of how AI Agents balance their capabilities with system parameters like latency, energy utilization, network bandwidth utilization, chip utilization, real-time execution, standardization, reliability and effective job prioritization with queuing among other computing parameters."
+course_semester: "Spring 2026"
+
+baseurl: "/ai-agents-real-world-decision-making" # the subpath of your site, e.g. /blog/
+url: "https://saptab.github.io/" # the base hostname & protocol for your site
+
+schoolname: "City College of New York"
+schoolurl: "https://www.ccny.cuny.edu/"
+twitter_username: CityCollegeNY
+
+address: |
+    Department of Computer Science
+    City College of New York
+    New York, NY
+
+attendance_note: "Attendance during the first 2-3 weeks is mandatory to satisfy federal financial aid regulations."
+
+project_deliverables: |
+    Students must produce an open-source codebase, preliminary prototype demo by end of the course, and a research report. The work will continue in CSc 59867 to reach higher TRL levels.
+
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# google_analytics: UA-XXXXXXXX-X
+
+### Do not change the followings unless you know what you are doing ###
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+dateformat: "%m/%d/%Y"
+
+future: true
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
