@@ -1,4 +1,4 @@
-# **CSc 59866-E: Senior Project I** ***AI Agents for Decision Making in the Real World***
+#     **CSc 59866-E: Senior Project I** ***AI Agents for Decision Making in the Real World***
 
 **Time:** Spring 2026, Mon/Wed 2:00p-3:15p		**Room:** SH-201  
 **Prof:** Saptarashmi Bandyopadhyay                    	**TA:** N/A  
@@ -121,32 +121,32 @@ All slides will be uploaded to the website within a few days to a week after cla
 | Jan 26 | Introduction: AI Agents in the Real World |  |
 | Jan 28 | Foundations: Scope and class objectives for Agentic ML |  |
 | Feb 2 | How to do CS and AI Research (Especially AI Agents) How to Read Research Papers (Demonstration) Introduction to Agentic AI Evaluation | 2 Papers for Hand-Written Research Paper Review Released |
-| Feb 4 | Single vs. Multi-Agent AI: Grid-World example of Single Agent AI Complexity: Multi-Agent State Action Time Space Complexity | Coding Assignment 1 Released  |
-| Feb 9 | Generalizability: AI Agents and Reward Modeling in Different Tasks | Hand-Written Research Paper Review 1 Due |
-| Feb 11 | Distributed Processing for AI Agents: Modalities (tabular, graphical, multi-modal) | Project Groups and Topics will be Assigned  |
+| Feb 4 | Single vs. Multi-Agent AI: Grid-World example of Single Agent AI Complexity: Multi-Agent State Action Time Space Complexity |  |
+| Feb 9 | Generalizability: AI Agents and Reward Modeling in Different Tasks | Hand-Written Research Paper Review 1 Due on Feb 9 |
+| Feb 11 | Distributed Processing for AI Agents: Modalities (tabular, graphical, multi-modal) | Project Groups and Topics Informally Shared  |
 | Feb 16 | No Classes Scheduled at CCNY, CUNY   (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/spring-2026-academic-calendar)) |  |
-| Feb 18 | Systems: Latency and Bandwidth balancing | Coding Assignment 1 Due |
-| Feb 23 | Deep Learning, Deep  Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): Training/Finetuning AI Models, Transformers, Q Learning, Deep Q Networks and the Bellman Equation | Bi-Weekly Research Project Update Assignment 1 Due |
-| Feb 25 | Deep Learning, Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): REINFORCE, Independent Q Learning and Convergence |  |
-| Mar 2 | Imitation Learning & Self-Supervised Learning: Agentic Algorithms to take Actions like Behavioral Cloning and DAgger | Hand-Written Research Paper Review 2 |
-| Mar 4 | Decision Making Algorithms for AI Agents like PPO, TRPO, DPO, GRPO, AlphaGo (RL \+ MCTS), StrateGo Distributed AI Agents Coding | Coding Assignment 2 Released Project Abstract Due |
-| Mar 9 | Robustness, Consistency and Risk Mitigation in AI Agents Offline Reinforcement Learning and Inverse Reinforcement Learning | Bi-Weekly Research Project Update Assignment 2 Due |
-| Mar 11 | Model Predictive Control (MPC): Real-time constraints, mistake correction and daily control tasks by AI Agents |   |
-| Mar 16 | Game Theory: Coordination and competition paradigms of AI Agents with Fundamental Algorithms AI Agent Capabilities for Planning, Reasoning and Navigation | Coding Assignment 2 Due  |
-| Mar 18 | Evolutionary Learning, Mean-Field Learning, Self-play for self-improvement and Continual Learning: Communication paradigms for AI Agents to Adapt in Real-Time Decentralized AI: When and How to Scale AI Agents. |  |
-| Mar 23 | Hands-on Coding Lab: Building AI Agents | Bi-Weekly Research Project Update Assignment 3 Due |
-| Mar 25 | Mid-Term Exam Review and In-Class Presentations  | Mid-Term Presentations, Posters and Code Due |
-| Mar 30 | Agentic Systems Efficiency: Energy, Network bandwidth, memory, chip utilization and power optimization |  |
+| Feb 18 | Systems: Latency and Bandwidth balancing | Coding Assignment 1 Released on Feb 22 |
+| Feb 23 | Deep Learning, Deep  Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): Training/Finetuning AI Models, Transformers, Q Learning, Deep Q Networks and the Bellman Equation |  |
+| Feb 25 | Deep Learning, Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): REINFORCE, Independent Q Learning and Convergence | Project Groups and Topics Formally Assigned |
+| Mar 2 | Imitation Learning & Self-Supervised Learning: Agentic Algorithms to take Actions like Behavioral Cloning and DAgger | Hand-Written Research Paper Review 2 Due on Mar 2 |
+| Mar 4 | Decision Making Algorithms for AI Agents like PPO, TRPO, DPO, GRPO, AlphaGo (RL \+ MCTS), StrateGo Distributed AI Agents Coding | Coding Assignment 1 Due on Mar 8 |
+| Mar 9 | Robustness, Consistency and Risk Mitigation in AI Agents Offline Reinforcement Learning and Inverse Reinforcement Learning | Coding Assignment 2 Released Bi-Weekly Research Project Update Assignment 1 Due on Mar 9 |
+| Mar 11 | Model Predictive Control (MPC): Real-time constraints, mistake correction and daily control tasks by AI Agents | Project Abstract Due on Mar 11  |
+| Mar 16 | Game Theory: Coordination and competition paradigms of AI Agents with Fundamental Algorithms AI Agent Capabilities for Planning, Reasoning and Navigation |  |
+| Mar 18 | Evolutionary Learning, Mean-Field Learning, Self-play for self-improvement and Continual Learning: Communication paradigms for AI Agents to Adapt in Real-Time Decentralized AI: When and How to Scale AI Agents. | Coding Assignment 2 Due on Mar 24 |
+| Mar 23 | Hands-on Coding Lab: Building AI Agents | Bi-Weekly Research Project Update Assignment 2 Due on Mar 23 |
+| Mar 25 | Mid-Term Exam Review and In-Class Presentations  | Mid-Term Presentations, Posters and Code Due on Mar 25 |
+| Mar 30 | Agentic Systems Efficiency: Energy, Network bandwidth, memory, chip utilization and power optimization | Bi-Weekly Research Project Update Assignment 3 Due on Mar 30 |
 | Apr 1 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
 | Apr 6 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
 | Apr 8 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
-| Apr 13 | Multimodal Agentic Evaluation: Post-training, Inference, Qualitative and Quantitative decision-making assessment (Trustworthy and Explainable Agents) | Bi-Weekly Research Project Update Assignment 4 Due |
+| Apr 13 | Multimodal Agentic Evaluation: Post-training, Inference, Qualitative and Quantitative decision-making assessment (Trustworthy and Explainable Agents) | Bi-Weekly Research Project Update Assignment 4 Due on Apr 13 |
 | Apr 15 | Advanced Topics: AI Agents for 6G/7G Internet and Systems |  |
-| Apr 20 | Advanced Topics: AI Agents for Scientific Discovery  | Bi-Weekly Research Project Update Assignment 5 Due |
+| Apr 20 | Advanced Topics: AI Agents for Scientific Discovery  | Bi-Weekly Research Project Update Assignment 5 Due on Apr 20 |
 | Apr 22 | Advanced Topics: AI Agents for Smart Grid Power Orchestration |  |
 | Apr 27 | Advanced Topics: Robotic, AR/VR/XR and Autonomous Transportation Agents |  |
 | Apr 29 | Advanced Topics: Software Coding Agents, Agentic RAG and Multimodal Embodied Audio-Vision-Language Agents  |  |
-| May 4 | Advanced Topics: Real-world Supply Chains logistics, Stock portfolio orchestration and Physical AI Agents problems | Bi-Weekly Research Project Update Assignment 6 Due |
+| May 4 | Advanced Topics: Real-world Supply Chains logistics, Stock portfolio orchestration and Physical AI Agents problems | Bi-Weekly Research Project Update Assignment 6 Due on May 4 |
 | May 6 | Advanced Topics: Human-Agent and Agent-Agent Coordination and Competition |  |
 | May 11 | Advanced Topics: Dynamic Memory and Standardized Protocols for Real-World Agents |  |
 | May 13 | Final Exam Class Research Project Presentations (Part I) | Final Presentations and Code Due At least 90% to 95% of project reports must be completed along with presentation Attendance is mandatory for all students  |
@@ -351,3 +351,4 @@ Academic integrity is at the core of a college or university education. Faculty 
 5. Implementation  
    Each college shall implement this Policy and may adopt its own more specific procedures to implement the Policy. Colleges’ procedures must be consistent with the policy and procedures described in the Policy. **CUNY BOT adopted a revised “Policy on Academic Integrity” on June 27, 2011, which went into effect on July 1, 2011 (6.27.2011.Cal.5.L). Amended and replaced on June 27, 2022\. (6.27.2022. No. 4.F.)**  
    **EXPLANATION** Revision to the 2022 Academic Integrity Policy is necessary because the current policy does not address the advent of Artificial Intelligence and its use by students at CUNY.Preparing students to learn from and use AI responsibly and ethically is critical to the University’s mission, to ensuring academic integrity, to securing the rigor of the University’s academic programs.Further, students must become facile with the use of AI to learn effectively in today’s world and to prepare for their AI-assisted careers and lives in the future.
+
