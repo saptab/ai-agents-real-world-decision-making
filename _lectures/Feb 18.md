@@ -3,7 +3,7 @@ type: lecture
 date: 2026-02-18T14:00:00-05:00
 title: February 18, 2026
 tldr: "Systems: Latency and Bandwidth balancing"
-thumbnail: /static_files/presentations/lec03.jpg
+thumbnail: /static_files/presentations/lec01.jpg
 links: 
     - url: "/static_files/presentations/Feb 18.pdf"
       name: slides

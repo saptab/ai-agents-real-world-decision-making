@@ -3,7 +3,7 @@ type: lecture
 date: 2026-02-11T14:00:00-05:00
 title: February 11, 2026
 tldr: "Distributed Processing for AI Agents: Modalities (tabular, graphical, multi-modal)"
-thumbnail: /static_files/presentations/lec02.jpg
+thumbnail: /static_files/presentations/lec01.jpg
 links: 
     - url: "/static_files/presentations/Feb 11.pdf"
       name: slides
