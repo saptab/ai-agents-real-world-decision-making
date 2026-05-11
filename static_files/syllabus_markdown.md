@@ -51,7 +51,7 @@ Students should focus on running Finetuning Model tutorials using the following 
 
 1. Parallel and Distributed Computation: Numerical Methods by Dimitri P. Bertsekas and John N. Tsitsiklis, 2018 [https://web.mit.edu/dimitrib/www/pdc.html  http://www.athenasc.com/pdcbook.pdf](https://web.mit.edu/dimitrib/www/pdc.html)   
 2. Rollout, Policy Iteration, and Distributed Reinforcement Learning by Dimitri P. Bertsekas, 2020 [https://web.mit.edu/dimitrib/www/dp\_rollout\_book.html](https://web.mit.edu/dimitrib/www/dp_rollout_book.html) \+ [https://web.mit.edu/dimitrib/www/Rollout\_Complete%20Book.pdf](https://web.mit.edu/dimitrib/www/Rollout_Complete%20Book.pdf)   
-3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/download/marl-book.pdf](https://www.marl-book.com/download/marl-book.pdf)   
+3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/\#download](https://www.marl-book.com/#download)   
 4. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 (including video lectures) [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html) \+ [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)   
 5. Deep Learning by Ian Goodfellow, 2012 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)   
 6. An Introduction to Multi-Agent Systems by Michael Wooldridge, 2001  [https://uranos.ch/research/references/Wooldridge\_2001/TLTK.pdf](https://uranos.ch/research/references/Wooldridge_2001/TLTK.pdf)   
@@ -127,28 +127,29 @@ All slides will be uploaded to the website within a few days to a week after cla
 | Feb 16 | No Classes Scheduled at CCNY, CUNY   (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/spring-2026-academic-calendar)) |  |
 | Feb 18 | Systems: Latency and Bandwidth balancing | Coding Assignment 1 Released on Feb 22 |
 | Feb 23 | Deep Learning, Deep  Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): Training/Finetuning AI Models, Transformers, Q Learning, Deep Q Networks and the Bellman Equation |  |
-| Feb 25 | Deep Learning, Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): REINFORCE, Independent Q Learning and Convergence | Project Groups and Topics Formally Assigned |
-| Mar 2 | Imitation Learning & Self-Supervised Learning: Agentic Algorithms to take Actions like Behavioral Cloning and DAgger | Hand-Written Research Paper Review 2 Due on Mar 2 |
-| Mar 4 | Decision Making Algorithms for AI Agents like PPO, TRPO, DPO, GRPO, AlphaGo (RL \+ MCTS), StrateGo Distributed AI Agents Coding | Coding Assignment 1 Due on Mar 8 |
-| Mar 9 | Robustness, Consistency and Risk Mitigation in AI Agents Offline Reinforcement Learning and Inverse Reinforcement Learning | Coding Assignment 2 Released Bi-Weekly Research Project Update Assignment 1 Due on Mar 9 |
-| Mar 11 | Model Predictive Control (MPC): Real-time constraints, mistake correction and daily control tasks by AI Agents | Project Abstract Due on Mar 11  |
+| Feb 25 | Deep Learning, Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): REINFORCE, Independent Q Learning and Convergence |  |
+| Mar 2 | Imitation Learning & Self-Supervised Learning: Agentic Algorithms to take Actions like Behavioral Cloning and DAgger |  |
+| Mar 4 | Decision Making Algorithms for AI Agents like PPO, TRPO, DPO, GRPO, AlphaGo (RL \+ MCTS), StrateGo Distributed AI Agents Coding |  |
+| Mar 9 | Robustness, Consistency and Risk Mitigation in AI Agents Offline Reinforcement Learning and Inverse Reinforcement Learning |   |
+| Mar 11 | Model Predictive Control (MPC): Real-time constraints, mistake correction and daily control tasks by AI Agents |  |
 | Mar 16 | Game Theory: Coordination and competition paradigms of AI Agents with Fundamental Algorithms AI Agent Capabilities for Planning, Reasoning and Navigation |  |
-| Mar 18 | Evolutionary Learning, Mean-Field Learning, Self-play for self-improvement and Continual Learning: Communication paradigms for AI Agents to Adapt in Real-Time Decentralized AI: When and How to Scale AI Agents. | Coding Assignment 2 Due on Mar 24 |
-| Mar 23 | Hands-on Coding Lab: Building AI Agents | Bi-Weekly Research Project Update Assignment 2 Due on Mar 23 |
-| Mar 25 | Mid-Term Exam Review and In-Class Presentations  | Mid-Term Presentations, Posters and Code Due on Mar 25 |
-| Mar 30 | Agentic Systems Efficiency: Energy, Network bandwidth, memory, chip utilization and power optimization | Bi-Weekly Research Project Update Assignment 3 Due on Mar 30 |
+| Mar 18 | Evolutionary Learning, Mean-Field Learning, Self-play for self-improvement and Continual Learning: Communication paradigms for AI Agents to Adapt in Real-Time Decentralized AI: When and How to Scale AI Agents. |  |
+| Mar 23 | Hands-on Coding Lab: Building AI Agents |  |
+| Mar 25 | Agentic Systems Efficiency: Energy, Network bandwidth, memory, chip utilization and power optimization |  |
+| Mar 30 | Multimodal Agentic Evaluation: Post-training, Inference, Qualitative and Quantitative decision-making assessment (Trustworthy and Explainable Agents) |  |
 | Apr 1 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
 | Apr 6 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
 | Apr 8 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
-| Apr 13 | Multimodal Agentic Evaluation: Post-training, Inference, Qualitative and Quantitative decision-making assessment (Trustworthy and Explainable Agents) | Bi-Weekly Research Project Update Assignment 4 Due on Apr 13 |
-| Apr 15 | Advanced Topics: AI Agents for 6G/7G Internet and Systems |  |
-| Apr 20 | Advanced Topics: AI Agents for Scientific Discovery  | Bi-Weekly Research Project Update Assignment 5 Due on Apr 20 |
-| Apr 22 | Advanced Topics: AI Agents for Smart Grid Power Orchestration |  |
-| Apr 27 | Advanced Topics: Robotic, AR/VR/XR and Autonomous Transportation Agents |  |
-| Apr 29 | Advanced Topics: Software Coding Agents, Agentic RAG and Multimodal Embodied Audio-Vision-Language Agents  |  |
-| May 4 | Advanced Topics: Real-world Supply Chains logistics, Stock portfolio orchestration and Physical AI Agents problems | Bi-Weekly Research Project Update Assignment 6 Due on May 4 |
-| May 6 | Advanced Topics: Human-Agent and Agent-Agent Coordination and Competition |  |
-| May 11 | Advanced Topics: Dynamic Memory and Standardized Protocols for Real-World Agents |  |
+| Apr 9 |  | Hand-Written Research Paper Review 2 Due on Apr 9 |
+| Apr 13 | Advanced Topics: AI Agents for 6G/7G Internet and Systems | Weekly Research Project Update Assignment 1 Due on Apr 13 |
+| Apr 15 | Advanced Topics: AI Agents for Scientific Discovery  |  |
+| Apr 20 | Advanced Topics: AI Agents for Smart Grid Power Orchestration | Weekly Research Project Update Assignment 2 Due on Apr 20 |
+| Apr 22 | Advanced Topics: Robotic, AR/VR/XR and Autonomous Transportation Agents |  |
+| Apr 27 | Advanced Topics: Software Coding Agents, Agentic RAG and Multimodal Embodied Audio-Vision-Language Agents  | Weekly Research Project Update Assignment 3 Due on Apr 27 |
+| Apr 29 | Advanced Topics: Real-world Supply Chains logistics, Stock portfolio orchestration and Physical AI Agents problems |  |
+| May 4 | Advanced Topics: Human-Agent and Agent-Agent Coordination and Competition | Weekly Research Project Update Assignment 4 Due on May 4 |
+| May 6 | Advanced Topics: Human-Agent and Agent-Agent Coordination and Competition (Continued) |  |
+| May 11 | Advanced Topics: Dynamic Memory and Standardized Protocols for Real-World Agents | Weekly Research Project Update Assignment 5 Due on May 11 |
 | May 13 | Final Exam Class Research Project Presentations (Part I) | Final Presentations and Code Due At least 90% to 95% of project reports must be completed along with presentation Attendance is mandatory for all students  |
 | May 18 | Final Exam Class Research Project Presentations (Part II) | At least 90% to 95% of project reports must be completed along with presentation Attendance is mandatory for all students |
 | May 16-18, May 20-26 | Final Exam Class Research Project Report as per CUNY CCNY Academic Calendar (Ref Link: [Link](https://www.ccny.cuny.edu/registrar/spring-2026-academic-calendar)) | Final Project Report and Final Code Due on Final Exam Week (Specific Date TBA, once Final Exam Schedules are released) |
@@ -170,8 +171,8 @@ All slides will be uploaded to the website within a few days to a week after cla
   * The sum of all coding assignment scores will be weighted to generate a score out of 20  
   * This grades includes coding new problems and debugging existing coding problems  
   * Assignments will be individual submissions  
-* Bi-weekly Research Progress Update  (10%)  
-  * Every two weeks students will submit a brief summary (1 to 2 page report) of their research project progress, including coding updates, report writing updates, brainstorming, etc.  
+* Weekly Research Progress Update  (10%)  
+  * Students will submit a brief summary (1 to 2 page report) of their research project progress, including coding updates, report writing updates, brainstorming, etc.  
   * Students have to clearly outline their individual research tasks as well as their tasks jointly done in a group  
   * Tentative Assignments (1 submission per group) will be due on  
     * Feb 23  
@@ -186,11 +187,8 @@ All slides will be uploaded to the website within a few days to a week after cla
   * 1 page handwritten report talking about the strength, weakness and opportunities on reading 2 research papers which will be provided by the Professor  
   * Assignments will be individual submissions  
 * Group Project (55%)  
-  * Project Abstract (Report using LaTeX code (e.g. on the Overleaf platform) in the form of a Research Paper) (7%)  
-  * Project Midterm Exam Review Presentation (12%)  
-    * Students have to submit clear assignment deliverables in the form of open-source documented code, a poster and presentation slides with visualizations for their grades  
-  * Final Exam Project Presentation (15%)  
-  * Final Exam Project Report (21%)  
+  * Final Exam Project Presentation (19%)  
+  * Final Exam Project Report (36%)  
   * For the Finals grade, students have to submit clear assignment deliverables in the form of  
     * open-source documented code  
     * an 8 page single-column project report in LaTeX following the template from this [style file](https://drive.google.com/file/d/1nEb6n5z49fTlBe9nu2Lhgm7TYhjZoGnk/view?usp=sharing)  
