@@ -2,9 +2,9 @@
 
 repository: saptab/ai-agents-real-world-decision-making
 
-course_name: "CSc 59866-E: Senior Project I - AI Agents for Decision Making in the Real World"
-course_description: "Artificial Intelligence (AI) Agents are special autonomous models that can take reasonable actions in the real world. The class objective is to design and implement Agentic Machine Learning Algorithms that allow AI to observe their environment, take an action that impacts the environment, and find qualitative and quantitative approaches (including receiving environmental feedback) to evaluate the goodness of the AI's decision making. Students will be training and building Multimodal AI Agents (e.g., Large Language Models or LLM Agents, Audio-Vision-Language Models or AVLM Agents, Robotic Agents, Autonomous Transportation Agents, AR/VR/XR Agents, Scientific Discovery Agents, Agents that orchestrate Hardware Architectures/Systems,/Networks and other Multimodal AI Agents) in this project-oriented course.\n\nThe course will introduce the basics of training, finetuning and inferencing of AI Agents where students will develop new coding, algorithmic, theoretical, systems-level and interdisciplinary application skills for Research and Development. Students will be specializing in AI Agent algorithms, and will have the ability to determine when to follow a Multi-Agent AI solution vs a Single-Agent AI solution. Students will also develop the skills to understand when single-processing is more efficient vs when multi-processing and distributed processing is more effective for deploying such AI Agents in the real-world. This involves an insight of how AI Agents balance their capabilities with system parameters like latency, energy utilization, network bandwidth utilization, chip utilization, real-time execution, standardization, reliability and effective job prioritization with queuing among other computing parameters."
-course_semester: "Spring 2026"
+course_name: "CSc 59867-E: Senior Project II - AI Agents for Decision Making in the Real World"
+course_description: "This course continues the Senior Project sequence focused on designing, implementing, and evaluating AI agents for real-world decision-making problems. Students build on prior project work to refine the system, improve technical rigor, validate performance, and produce a final research-oriented deliverable. The course emphasizes prototype completion, open-source engineering, reproducibility, evaluation, and communication of results through written and oral presentations."
+course_semester: "Fall 2026"
 
 baseurl: "/ai-agents-real-world-decision-making" # the subpath of your site, e.g. /blog/
 url: "https://saptab.github.io/" # the base hostname & protocol for your site
@@ -21,7 +21,7 @@ address: |
 attendance_note: "Attendance during the first 2-3 weeks is mandatory to satisfy federal financial aid regulations."
 
 project_deliverables: |
-    Students must produce an open-source codebase, preliminary prototype demo by end of the course, and a research report. The work will continue in CSc 59867 to reach higher TRL levels.
+    Students must produce a complete and documented project codebase, a validated working prototype, and a final research report with clear evaluation and discussion of results. The project should represent the current semester's final Senior Project II deliverable.
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X

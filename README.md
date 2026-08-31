@@ -1,8 +1,8 @@
 # CSc 59867-E: Senior Project II - AI Agents for Decision Making in the Real World
 
-**Fall 2027 | The City College of New York (CUNY)**
+**Fall 2026 | The City College of New York (CUNY)**
 
-This repository serves as the central hub for code, resources, and schedule updates for CSc 59867-E.
+This repository serves as the central hub for project materials, resources, and course updates for CSc 59867-E.
 
 ---
 

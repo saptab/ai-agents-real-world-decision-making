@@ -6,6 +6,6 @@ permalink: /project/
 
 ## Project Deliverables
 
-Students are expected to develop an open-source codebase, a preliminary prototype demo by the end of CSc 59866-E, and a research report documenting results. Projects will be continued in CSc 59867 (Senior Project II) to advance to Technology Readiness Level (TRL) 2–4.
+Students are expected to complete and validate an open-source project codebase, demonstrate a working prototype for the current semester, and prepare a research-oriented report documenting methods, results, and evaluation. The goal of Senior Project II is to advance each project toward a meaningful, defensible engineering and research outcome.
 
 More details will be provided as the course progresses.

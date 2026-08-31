@@ -1,262 +1,43 @@
-#     **CSc 59866-E: Senior Project I** ***AI Agents for Decision Making in the Real World***
+# CSc 59867-E: Senior Project II - AI Agents for Decision Making in the Real World
 
-**Time:** Spring 2026, Mon/Wed 2:00p-3:15p		**Room:** SH-201  
-**Prof:** Saptarashmi Bandyopadhyay                    	**TA:** N/A  
-**Office Hours**: 4 pm \- 5 pm Monday NAC 8/206D  
-**Email**: [sbandyopadhyay@ccny.cuny.edu](mailto:sbandyopadhyay@ccny.cuny.edu)
+**Time:** Fall 2026, TBD  
+**Prof:** Saptarashmi Bandyopadhyay  
+**Email:** [sbandyopadhyay@ccny.cuny.edu](mailto:sbandyopadhyay@ccny.cuny.edu)
 
-**Course Description**
+## Course Description
 
-Artificial Intelligence (AI) Agents are special autonomous models that can take reasonable actions in the real world. The class objective is to design and implement Agentic Machine Learning Algorithms that allow AI to observe their environment, take an action that impacts the environment, and find qualitative and quantitative approaches (including receiving environmental feedback) to evaluate the goodness of the AI's decision making. Students will be training and building Multimodal AI Agents (e.g., Large Language Models or LLM Agents, Audio-Vision-Language Models or AVLM Agents, Robotic Agents, Autonomous Transportation Agents, AR/VR/XR Agents, Scientific Discovery Agents, Agents that orchestrate Hardware Architectures/Systems,/Networks and other Multimodal AI Agents) in this project-oriented course. 
+Senior Project II continues the development of AI agent systems for real-world decision-making and research-oriented project work. Students build on prior project progress to refine the technical approach, improve implementation quality, validate results, and produce a complete final project demonstration and report.
 
-The course will introduce the basics of training, finetuning and inferencing of AI Agents where students will develop new coding, algorithmic, theoretical, systems-level and interdisciplinary application skills for Research and Development. Students will be specializing in AI Agent algorithms, and will have the ability to determine when to follow a Multi-Agent AI solution vs a Single-Agent AI solution. Students will also develop the skills to understand when single-processing is more efficient vs when multi-processing and distributed processing is more effective for deploying such AI Agents in the real-world. This involves an insight of how AI Agents balance their capabilities with system parameters like latency, energy utilization, network bandwidth utilization, chip utilization, real-time execution, standardization, reliability and effective job prioritization with queuing among other computing parameters. 
+The course emphasizes system design, evaluation, reproducibility, and effective communication of technical results. Students will further develop the ability to turn a prototype into a defensible, documented, and technically rigorous project outcome.
 
-**Research Skills, Focus and Expectations**
+## Learning Goals
 
-Students will be taught the fundamentals on how to do good research in AI Agents, starting from how to read research papers to understanding inputs, outputs and metrics for Research and Development (R\&D) of AI Agents. Students will be taught AI Agent Algorithms from Deep Reinforcement Learning (RL), Multi-Agent RL, Imitation Learning, Self-Supervised Learning, Computational Game Theory, Model Predictive Control, Continual Learning and Evolutionary Learning. An important skill for students will be to deploy Efficient AI Agent models (either quantized, compressed or with any new innovative approach) which will have lesser parameters but can serve AI capabilities like planning, reasoning, task manipulation and navigation well while performing better in computing system parameters. Students are expected to develop an open-source code base, preliminary prototype Demo and write a high quality research paper report on their findings. 
+* Complete and improve the AI agent prototype developed during the prior project sequence.
+* Strengthen research and engineering practices in implementation, evaluation, and documentation.
+* Develop reproducible, open-source project work with clear contribution and validation methods.
+* Communicate project results through technical writing and oral presentation.
 
-**Coding Skills**
+## Project Deliverables
 
-Students are expected to have reasonable skills in Python programming (either from coursework or self-taught); but more importantly, show openness to learn quickly in picking up new AI skills, be it in Programming or Research, and demonstrate sincere eagerness and enthusiasm in how AI can be trained to make real-world decisions. Students will be picking up the skills to write efficient AI Agents code, be it with single processing, multiple processing or modern distributed computing, as appropriate. As a part of the Demo, students may learn new programming languages like JAX, or Kotlin, based on their relevant project. Students will also be learning good coding documentation and testing skills including writing unit tests. 
+Students are expected to produce a complete, documented codebase, a validated working prototype, and a final report describing the project goals, methods, experimentation, evaluation, and conclusions. The final deliverable should reflect a mature Senior Project II outcome suitable for continued development or dissemination.
 
-**Course Outcomes**
+## Recommended Resources
 
-The first semester (Spring 2026\) will introduce the basics of training, finetuning, and inferencing of AI Agents.
+1. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/#download](https://www.marl-book.com/#download)  
+2. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)  
+3. Deep Learning by Ian Goodfellow, 2012 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)  
+4. HuggingFace Transformers [https://huggingface.co/docs/transformers/en/index](https://huggingface.co/docs/transformers/en/index)  
+5. Gymnasium [https://gymnasium.farama.org/index.html](https://gymnasium.farama.org/index.html)  
+6. JAX [https://docs.jax.dev/en/latest/](https://docs.jax.dev/en/latest/)  
+7. Overleaf LaTeX Editor [https://www.overleaf.com/](https://www.overleaf.com/)  
 
-* Theoretical & Algorithmic Capabilities: Students will look beyond probability generation to master algorithms that take action. Focus areas include Multi-Agent Reinforcement Learning (MARL), Proximal Policy Optimization (PPO), Imitation Learning, and Computational Game Theory.  
-* Real-World Applications: Students will apply agents to solve complex physical and logistical problems, such as Climate Conservation, Supply Chain Orchestration, Stock Portfolio Orchestration, Smart Grid Energy Management, Autonomous Transportation, Robotic Agents, Next Gen Networks and Systems, along with Scientific Discovery.  
-* Efficiency & Distributed Systems: Students will learn to build distributed AI that is low-energy, low-latency, and memory-efficient to ensure agents are deployable on edge devices (e.g., smart glasses, robots) rather than just functioning as "toys" in simulation.
+## Communication and Expectations
 
+Students are expected to meet project milestones, communicate progress, and seek guidance when needed. Prompt communication with the instructor is encouraged to ensure that the project remains technically sound and aligned with course requirements.
 
-**Project Deliverables:** Students are expected to develop an open-source code base, a preliminary prototype Demo at the end of CSc 59866-E, and write a research report on their findings. 
+## Course Timeline
 
-**Attendance:** Attendance in-class is recommended. There will be an in-class participation grade. Should any circumstances arise, please email the Professor as soon as possible. The course is outcome-driven.
-
-**Free TextBooks, Open-Source Coding & Relevant Resources**
-
-– Mandatory Coding Tutorials (Target Date: Feb 11\)  
-Students should focus on running Finetuning Model tutorials using the following tools:
-
-1. Torch-tune: [PyTorch Native Finetuning](https://pytorch.org/blog/torchtune-fine-tune-llms/)  
-2. Unsloth AI: [Faster/Memory-Efficient Finetuning](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide)
-
-– Recommended Open-Source Resources on the HuggingFace platform
-
-1. Deep RL: [Introduction to Reinforcement Learning](https://huggingface.co/learn/deep-rl-course/unit0/introduction)  
-2. AI Agents: [Tool use and Planning](https://huggingface.co/learn/agents-course/en/unit0/introduction)  
-3. Robotics: [Robotics Course](https://huggingface.co/learn/robotics-course)  
-4. Post-Training: [Finetuning](https://huggingface.co/learn/smol-course/unit0/1)
-
-– Free Text Books
-
-1. Parallel and Distributed Computation: Numerical Methods by Dimitri P. Bertsekas and John N. Tsitsiklis, 2018 [https://web.mit.edu/dimitrib/www/pdc.html  http://www.athenasc.com/pdcbook.pdf](https://web.mit.edu/dimitrib/www/pdc.html)   
-2. Rollout, Policy Iteration, and Distributed Reinforcement Learning by Dimitri P. Bertsekas, 2020 [https://web.mit.edu/dimitrib/www/dp\_rollout\_book.html](https://web.mit.edu/dimitrib/www/dp_rollout_book.html) \+ [https://web.mit.edu/dimitrib/www/Rollout\_Complete%20Book.pdf](https://web.mit.edu/dimitrib/www/Rollout_Complete%20Book.pdf)   
-3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/\#download](https://www.marl-book.com/#download)   
-4. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 (including video lectures) [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html) \+ [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)   
-5. Deep Learning by Ian Goodfellow, 2012 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)   
-6. An Introduction to Multi-Agent Systems by Michael Wooldridge, 2001  [https://uranos.ch/research/references/Wooldridge\_2001/TLTK.pdf](https://uranos.ch/research/references/Wooldridge_2001/TLTK.pdf)   
-7. 6G Flagship Book, 2023 [https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/](https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/)   
-8. Selected open-source research papers will be provided by the Professor
-
-– Open-Access JAX Learning Resources
-
-1. JAX 101 Tutorial [https://docs.jax.dev/en/latest/jax-101.html](https://docs.jax.dev/en/latest/jax-101.html)   
-2. JAX Tutorials (including JAX 201 and JAX 301\) [https://docs.jax.dev/en/latest/\_tutorials/index.html](https://docs.jax.dev/en/latest/_tutorials/index.html)   
-3. JAX Documentation [https://docs.jax.dev/en/latest/jax.html?spm=a2c6h.13046898.publish-article.21.6f9f6ffaIymbyj](https://docs.jax.dev/en/latest/jax.html?spm=a2c6h.13046898.publish-article.21.6f9f6ffaIymbyj)   
-4. JAXMARL [https://github.com/FLAIROx/JaxMARL](https://github.com/FLAIROx/JaxMARL) 
-
-– Open-Source LaTeX Coding Resources for Report Writing
-
-1. LaTeX tutorial on Overleaf [https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)   
-2. TeXStudio [https://texstudio-org.github.io/getting\_started.html](https://texstudio-org.github.io/getting_started.html) 
-
-– Open-Source Coding Resources
-
-1. HuggingFace Transformers coding library [https://huggingface.co/docs/transformers/en/index](https://huggingface.co/docs/transformers/en/index)   
-2. PyTorch Lightning  
-   1. Lightning [https://lightning.ai/docs/pytorch/stable/](https://lightning.ai/docs/pytorch/stable/)   
-   2. Lightning’s github repository [https://github.com/Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)   
-   3. Pypi package [https://pypi.org/project/pytorch-lightning/](https://pypi.org/project/pytorch-lightning/)   
-3. Gymnasium coding library   
-   1. Gymnasium on Farama [https://gymnasium.farama.org/index.html](https://gymnasium.farama.org/index.html)   
-   2. Farama’s github repository [https://github.com/Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium)   
-4. Python multiprocessing coding library [https://docs.python.org/3/library/multiprocessing.html](https://docs.python.org/3/library/multiprocessing.html)   
-5. HuggingFace Deep Reinforcement Learning Materials [https://huggingface.co/learn/deep-rl-course/en/unit0/introduction](https://huggingface.co/learn/deep-rl-course/en/unit0/introduction) Github: [https://github.com/huggingface/deep-rl-class](https://github.com/huggingface/deep-rl-class)   
-6. HuggingFace AI Agents Materials [https://huggingface.co/learn/agents-course/en/unit0/introduction](https://huggingface.co/learn/agents-course/en/unit0/introduction) Github: [https://github.com/huggingface/agents-course](https://github.com/huggingface/agents-course) 
-
-– Open-source Unit Testing Resources
-
-1. Python unittest package [https://docs.python.org/3/library/unittest.html](https://docs.python.org/3/library/unittest.html)  
-2. Python pytest package [https://pytest.org/](https://pytest.org/)
-
-– Background
-
-1. Probability: Introduction to Probability for Computing by Mor Harchol Balter, 2024 [https://www.cs.cmu.edu/\~harchol/Probability/chapters/HarcholBalterWholeBook.pdf](https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf)   
-2. Mathematics for Machine Learning by Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong, 2020 [https://mml-book.github.io/book/mml-book.pdf](https://mml-book.github.io/book/mml-book.pdf)   
-3. Convex Optimization for Statistics and Machine Learning, Volume 1: Analysis by Ryan Tibshirani 2025 [https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf](https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf)   
-4. An Introduction to Statistical Learning with Python by Garreth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, 2023 [https://www.statlearning.com/](https://www.statlearning.com/) 
-
-– Google Colaboratory Set-Up for Assignments and Projects
-
-– You can run the Jupyter Notebook for Coding Assignments and Projects.
-
-1. The easiest way to run these accounts is creating a gmail account quicky with your name (student\_name)@gmail.com as Google Colab offers free compute on Cloud to run experiments  
-2. If you want to install Jupyter locally (local installation is not mandatory as Colab is easy to write development code on), follow the steps here [https://docs.jupyter.org/en/latest/running.html](https://docs.jupyter.org/en/latest/running.html)  
-3. To address our compute challenges, please create your Google Colab Account by Feb 2 class. I will confirm if accounts are created in class.
-
-**Feedback and Communication:**
-
-Student feedback is always welcome. If you are confused, have questions, have any insights, or are excited by some topic in class, you are always welcome to share it in class, in office hours or via email. Prompt communication is always encouraged so that students can get help quickly.
-
-**Tentative Course Schedule (Spring 2026\)**
-
-The course schedule for the class (subject to revision) provides class topics and due dates. All slides will be uploaded to the website within a few days to a week after class. All submissions are due on the mentioned date in the table at 11:59 pm ET (Eastern Time).
-
-Specific subtopics discussed in a class will be mentioned in the syllabus to help students revise during exams and to help them in their class projects.
-
-All slides will be uploaded to the website within a few days to a week after class.
-
-| DATE | TOPIC | Due Dates (Assignments/Project outcomes) |
-| :---- | :---- | :---- |
-| Jan 26 | Introduction: AI Agents in the Real World |  |
-| Jan 28 | Foundations: Scope and class objectives for Agentic ML |  |
-| Feb 2 | How to do CS and AI Research (Especially AI Agents) How to Read Research Papers (Demonstration) Introduction to Agentic AI Evaluation | 2 Papers for Hand-Written Research Paper Review Released |
-| Feb 4 | Single vs. Multi-Agent AI: Grid-World example of Single Agent AI Complexity: Multi-Agent State Action Time Space Complexity |  |
-| Feb 9 | Generalizability: AI Agents and Reward Modeling in Different Tasks | Hand-Written Research Paper Review 1 Due on Feb 9 |
-| Feb 11 | Distributed Processing for AI Agents: Modalities (tabular, graphical, multi-modal) | Project Groups and Topics Informally Shared  |
-| Feb 16 | No Classes Scheduled at CCNY, CUNY   (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/spring-2026-academic-calendar)) |  |
-| Feb 18 | Systems: Latency and Bandwidth balancing | Coding Assignment 1 Released on Feb 22 |
-| Feb 23 | Deep Learning, Deep  Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): Training/Finetuning AI Models, Transformers, Q Learning, Deep Q Networks and the Bellman Equation |  |
-| Feb 25 | Deep Learning, Reinforcement Learning (RL) & Multi-Agent Deep Reinforcement Learning (MARL): REINFORCE, Independent Q Learning and Convergence |  |
-| Mar 2 | Imitation Learning & Self-Supervised Learning: Agentic Algorithms to take Actions like Behavioral Cloning and DAgger |  |
-| Mar 4 | Decision Making Algorithms for AI Agents like PPO, TRPO, DPO, GRPO, AlphaGo (RL \+ MCTS), StrateGo Distributed AI Agents Coding |  |
-| Mar 9 | Robustness, Consistency and Risk Mitigation in AI Agents Offline Reinforcement Learning and Inverse Reinforcement Learning |   |
-| Mar 11 | Model Predictive Control (MPC): Real-time constraints, mistake correction and daily control tasks by AI Agents |  |
-| Mar 16 | Game Theory: Coordination and competition paradigms of AI Agents with Fundamental Algorithms AI Agent Capabilities for Planning, Reasoning and Navigation |  |
-| Mar 18 | Evolutionary Learning, Mean-Field Learning, Self-play for self-improvement and Continual Learning: Communication paradigms for AI Agents to Adapt in Real-Time Decentralized AI: When and How to Scale AI Agents. |  |
-| Mar 23 | Hands-on Coding Lab: Building AI Agents |  |
-| Mar 25 | Agentic Systems Efficiency: Energy, Network bandwidth, memory, chip utilization and power optimization |  |
-| Mar 30 | Multimodal Agentic Evaluation: Post-training, Inference, Qualitative and Quantitative decision-making assessment (Trustworthy and Explainable Agents) |  |
-| Apr 1 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
-| Apr 6 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
-| Apr 8 | No Classes Scheduled, Spring Semester Break at CCNY, CUNY  (Academic Calendar Ref Link: [Link](https://www.ccny.cuny.edu/registrar/fall-2025-academic-calendar)) |  |
-| Apr 9 |  | Hand-Written Research Paper Review 2 Due on Apr 9 |
-| Apr 13 | Advanced Topics: AI Agents for 6G/7G Internet and Systems | Weekly Research Project Update Assignment 1 Due on Apr 13 |
-| Apr 15 | Advanced Topics: AI Agents for Scientific Discovery  |  |
-| Apr 20 | Advanced Topics: AI Agents for Smart Grid Power Orchestration | Weekly Research Project Update Assignment 2 Due on Apr 20 |
-| Apr 22 | Advanced Topics: Robotic, AR/VR/XR and Autonomous Transportation Agents |  |
-| Apr 27 | Advanced Topics: Software Coding Agents, Agentic RAG and Multimodal Embodied Audio-Vision-Language Agents  | Weekly Research Project Update Assignment 3 Due on Apr 27 |
-| Apr 29 | Advanced Topics: Real-world Supply Chains logistics, Stock portfolio orchestration and Physical AI Agents problems |  |
-| May 4 | Advanced Topics: Human-Agent and Agent-Agent Coordination and Competition | Weekly Research Project Update Assignment 4 Due on May 4 |
-| May 6 | Advanced Topics: Human-Agent and Agent-Agent Coordination and Competition (Continued) |  |
-| May 11 | Advanced Topics: Dynamic Memory and Standardized Protocols for Real-World Agents | Weekly Research Project Update Assignment 5 Due on May 11 |
-| May 13 | Final Exam Class Research Project Presentations (Part I) | Final Presentations and Code Due At least 90% to 95% of project reports must be completed along with presentation Attendance is mandatory for all students  |
-| May 18 | Final Exam Class Research Project Presentations (Part II) | At least 90% to 95% of project reports must be completed along with presentation Attendance is mandatory for all students |
-| May 16-18, May 20-26 | Final Exam Class Research Project Report as per CUNY CCNY Academic Calendar (Ref Link: [Link](https://www.ccny.cuny.edu/registrar/spring-2026-academic-calendar)) | Final Project Report and Final Code Due on Final Exam Week (Specific Date TBA, once Final Exam Schedules are released) |
-
-– **Late Policy**  
-	– Delays in Assignment submission will lead to a deduction of 10% every day the assignment is delayed leading to a 0 if assignment is submitted 10 days after submission deadline. If an assignment is out of 100, a delayed submission will lead to a grade out of 90 points on Day 1, 80 points on Day 2 and so on.
-
-– **Recommendations on Assignment Submission**
-
-	– My recommendation is to start and submit the assignments early, so that if you have questions, you can email me, come to my office hours, or ask me in class.
-
-**PLEASE SUBMIT ASSIGNMENTS EARLY**
-
-**PLEASE REVISE YOUR ASSIGNMENTS AND PROJECTS THOROUGHLY**
-
-– **Grading Structure**
-
-* Programming Assignments (20%)  
-  * The sum of all coding assignment scores will be weighted to generate a score out of 20  
-  * This grades includes coding new problems and debugging existing coding problems  
-  * Assignments will be individual submissions  
-* Weekly Research Progress Update  (10%)  
-  * Students will submit a brief summary (1 to 2 page report) of their research project progress, including coding updates, report writing updates, brainstorming, etc.  
-  * Students have to clearly outline their individual research tasks as well as their tasks jointly done in a group  
-  * Tentative Assignments (1 submission per group) will be due on  
-    * Feb 23  
-    * Mar 9  
-    * Mar 23  
-    * Apr 13  
-    * Apr 20  
-    * May 4  
-* Classroom Participation (10%)  
-  * Classroom Questions In-Person (1% in each class during interactions, maximum of 10 classes)  
-* Research Paper Reviews (5%)  
-  * 1 page handwritten report talking about the strength, weakness and opportunities on reading 2 research papers which will be provided by the Professor  
-  * Assignments will be individual submissions  
-* Group Project (55%)  
-  * Final Exam Project Presentation (19%)  
-  * Final Exam Project Report (36%)  
-  * For the Finals grade, students have to submit clear assignment deliverables in the form of  
-    * open-source documented code  
-    * an 8 page single-column project report in LaTeX following the template from this [style file](https://drive.google.com/file/d/1nEb6n5z49fTlBe9nu2Lhgm7TYhjZoGnk/view?usp=sharing)  
-      * Any additional diagrams can be put in the Appendix outside the 8 page limit  
-      * References are to be provided after the 8 pages, providing citations in the project report  
-      * If any group of students are facing challenges with LaTeX based report writing, they should contact the Professor immediately for alternative templates  
-    * and presentation slides with visualizations 
-
-– **How to Read Research Papers**:
-
-Research in this class must be efficient. You are expected to skim papers first to avoid "rabbit holes" (spending hours on a paper without understanding it). Follow this protocol for every paper:
-
-1. **Abstract (5 mins):** Identify the specific weakness in existing methods and the proposed solution. Make scratchpad notes immediately.  
-2. **Conclusion & Future Work (4 mins):** Look for the quantitative results backing the solution. Note the authors' self-admitted weaknesses and future work suggestions—these are opportunities for your own project.  
-3. **The Decision:** If the paper is relevant, go back and read the Methods/Algorithms and Results sections (\>5 mins).  
-   
-
-**Identify "Pillar Papers":** For your specific project, you must identify a few "Pillar Papers." These are the core papers describing the system you are improving or the main weakness you are addressing. Once approved by the Professor, these must be read thoroughly.
-
-– **Recommended Reading List** (Non-sequential; **Simulated Environments & Agents)**
-
-* [**JAXMARL (NeurIPS 2024\)**](https://proceedings.neurips.cc/paper_files/paper/2024/file/5aee125f052c90e326dcf6f380df94f6-Paper-Datasets_and_Benchmarks_Track.pdf)**:** Simulated environments for AI Agent capabilities.  
-* [**Social Intelligence:**](https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p233.pdf) Imitation Learning and Population-based learning (AAMAS/ACM).  
-* [**Multimodal Model Predictive Control**](https://dl.acm.org/doi/abs/10.5555/3709347.3744032): Self-Driving Cars and Autonomous Transportation  
-* [**YETI (2025)**](https://arxiv.org/abs/2501.09355)**:** Proactive Agency and Multimodal Efficiency in AR/VR/XR.  
-* [***Multi-Agent LLM Debate*** **(ICML 2024\)**](https://arxiv.org/abs/2305.14325) – Using agentic debate to improve factual accuracy and reasoning capabilities  
-* [**AI Agents for K-12 Interactive Visualization**](https://cdn.aaai.org/ojs/21548/21548-13-25561-1-2-20220628.pdf) **–** Education  
-* [**Factored NMT and NLRG Backtranslation**](https://aclanthology.org/W19-6811/) – Efficiency (Training with less data)..
-
-– Research Applications of AI Agents in the Real World
-
-* 👓 Autonomous Assistance with Augmented Reality/XR/VR/MR Agents  
-* 🤖 Robotic Planning, Reasoning and Task Manipulation at Scale  
-* 🛣️ Autonomous Transportation Navigation with Self-Driving Cars and Drones  
-* 🚚 Supply Chain Planning and Orchestration  
-* 📈 Stock Portfolio Optimization  
-* 🔋 Efficient Energy usage in Power Grid / Building / Battery Systems  
-* 🧬 Scientific Discovery accelerating protein and material design,  
-* ⚛️ Quantum Neuroscientific Modeling for the Artificial Brain,  
-* 🛰️ Autonomous Satellite correction in Astrophysical Systems with interplanetary Internet,  
-* 🧩 Explainable AI to improve user experience in Recommender Systems  
-* 𓇲 Multi-Agent AI Guided Chip Design,  
-* 🌳 AI Agents Guiding Climate Conservation,  
-* 🧑🔬 AI Agents for Biomedical Discovery to assist disease cure,  
-* 🏈 AI Agent Coaches for Sports Strategizing  
-* 🌉 AI for Infrastructure Design, Building, Maintenance  
-* 🏋️ AI Agents for Fitness and Health Guidance  
-* 🏢 AI Agents for Building Engineering and Consultancy,  
-* 🏭 Multi-Agent AI driven Energy Management System for Reliable Power Grid Orchestration,  
-* 🪫 AI Agents Designing Hybrid Battery Systems for Energy Storage  
-* 𖣯 AI Agents for Solving Board Games
-
-Further insights on AI Agents and Real-World Applications can be found [here](https://www.linkedin.com/pulse/joining-ccny-gc-cuny-assistant-professor-computer-ai-bandyopadhyay-qynne/).
-
-**– Publication Targets**
-
-High-quality class projects should aim for submission to:
-
-* Short-term: ACL, CVPR, and CHI Workshops among other workshops  
-* Long-term: NeurIPS and other conferences and journals
-
-– **Collaboration Policy**
-
-The Professor will assign two students to each team for the class research project and assign topics to the 10 teams on February 11\. Each student in the team has to clearly outline their individual research tasks as well as their tasks jointly done in a group for their projects in the six Research Progress Update assignment submissions. Every assignment will be clarified by the Professor about whether they are individual or group submissions in the assignment description. Within 1 team, each of the two students are expected to functionally collaborate. Across teams, students can discuss their project ideas in class, office hours, or midterm exam review while maintaining their unique innovation in their respective projects. Students have to ensure they are clearly following class policies.
-
-– **Research Project Feasibility Updates**
-
-     The students should follow and update the specifics in their project based on the Professor’s feedback in updating their project feasibility, specially from the Project Abstract, Midterm Review and six Research Progress Update assignments. Research Topics will initially be assigned by the Professor. If students would like to change the topics, they need to speak with the Professor within 1 week of topic assignment.
+The exact schedule for lectures, project milestones, and presentations will be provided during the semester. The current course emphasis is on project completion, technical refinement, and final deliverables.
 
 **– GenAI Policy**
 
