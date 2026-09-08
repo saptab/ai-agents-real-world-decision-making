@@ -3,7 +3,3 @@
 **Fall 2026 | The City College of New York (CUNY)**
 
 This repository serves as the central hub for project materials, resources, and course updates for CSc 59867-E.
-
----
-
-Template: [https://github.com/kazemnejad/jekyll-course-website-template](https://github.com/kazemnejad/jekyll-course-website-template)
