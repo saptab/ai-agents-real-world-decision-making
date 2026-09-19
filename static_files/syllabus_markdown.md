@@ -128,9 +128,9 @@ All slides will be uploaded to the website within a few days to a week after cla
 | **Sep 7** | Labor Day Holiday at CCNY, CUNY   |  |
 | **Sep 9** | Transitioning from Prototyping to Implementation: Expanding Algorithms to Real-World Scale |  |
 | **Sep 14** | System-Level Parameters: Optimizing Latency, Memory Inflation, and Network Bandwidth |  |
-| **Sep 16** | System-Level Parameters: Energy Utilization, Smart Grids, and Power Infrastructure | In-Class Classwork 1 |
+| **Sep 16** | System-Level Parameters: Energy Utilization, Smart Grids, and Power Infrastructure |  |
 | **Sep 21** | No Classes Scheduled (Fall Recess) |  |
-| **Sep 23** | Counterfactual Design, Active Learning, and Autonomous Exploration |  |
+| **Sep 23** | Counterfactual Design, Active Learning, and Autonomous Exploration | In-Class Classwork 1 |
 | **Sep 28** | Advanced Topics: Scientific Agents, Design, and Synthesis Agents |  |
 | **Sep 30** | Advanced Topics: Biomaterials, Cellular Biology Simulations, and Disease Modeling |  |
 | **Oct 5** | Advanced Topics: Financial Agents, Stock Portfolio Orchestration, and Trading |  |
