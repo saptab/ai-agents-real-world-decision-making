@@ -128,9 +128,9 @@ All slides will be uploaded to the website within a few days to a week after cla
 | **Sep 7** | Labor Day Holiday at CCNY, CUNY   |  |
 | **Sep 9** | Transitioning from Prototyping to Implementation: Expanding Algorithms to Real-World Scale |  |
 | **Sep 14** | System-Level Parameters: Optimizing Latency, Memory Inflation, and Network Bandwidth |  |
-| **Sep 16** | System-Level Parameters: Energy Utilization, Smart Grids, and Power Infrastructure | In-Class Classwork 1 |
+| **Sep 16** | System-Level Parameters: Energy Utilization, Smart Grids, and Power Infrastructure |  |
 | **Sep 21** | No Classes Scheduled (Fall Recess) |  |
-| **Sep 23** | Counterfactual Design, Active Learning, and Autonomous Exploration |  |
+| **Sep 23** | Counterfactual Design, Active Learning, and Autonomous Exploration | In-Class Classwork 1 |
 | **Sep 28** | Advanced Topics: Scientific Agents, Design, and Synthesis Agents |  |
 | **Sep 30** | Advanced Topics: Biomaterials, Cellular Biology Simulations, and Disease Modeling |  |
 | **Oct 5** | Advanced Topics: Financial Agents, Stock Portfolio Orchestration, and Trading |  |
@@ -349,4 +349,3 @@ Academic integrity is at the core of a college or university education. Faculty 
 5. Implementation  
    Each college shall implement this Policy and may adopt its own more specific procedures to implement the Policy. Colleges’ procedures must be consistent with the policy and procedures described in the Policy. **CUNY BOT adopted a revised “Policy on Academic Integrity” on June 27, 2011, which went into effect on July 1, 2011 (6.27.2011.Cal.5.L). Amended and replaced on June 27, 2022\. (6.27.2022. No. 4.F.)**  
    **EXPLANATION** Revision to the 2022 Academic Integrity Policy is necessary because the current policy does not address the advent of Artificial Intelligence and its use by students at CUNY.Preparing students to learn from and use AI responsibly and ethically is critical to the University’s mission, to ensuring academic integrity, to securing the rigor of the University’s academic programs.Further, students must become facile with the use of AI to learn effectively in today’s world and to prepare for their AI-assisted careers and lives in the future.
-
