@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,500;0,700;0,800;1,700;1,800&display=swap');
+
+/* ==========================================================================
+   Base Typography
+   ========================================================================== */
+.reveal {
+  font-family: 'Lato', sans-serif;
+  color: #000000;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #1A1A1A;
+  text-transform: none;
+  text-align: left;
+  line-height: 1.25;
+  font-size: 38px;
+  margin: 0 0 14px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.reveal p, .reveal li {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 21px;
+  line-height: 1.42;
+  color: #111111;
+  position: relative;
+  z-index: 2;
+}
+
+.reveal ul {
+  display: block;
+  padding-left: 1.2em;
+  margin-top: 10px;
+}
+
+.reveal li {
+  margin-bottom: 10px;
+}
+
+.reveal strong {
+  color: #000000;
+}
+
+/* ==========================================================================
+   Slide Dimensions & Anchoring (Screen AND Print-PDF overrides)
+   ========================================================================== */
+.reveal .slides section,
+html.print-pdf .reveal .slides section,
+.print-pdf .reveal .slides section {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  padding: 55px 75px !important;
+  box-sizing: border-box !important;
+  text-align: left;
+}
+
+/* Title Slide */
+.reveal .slides section.title-slide,
+html.print-pdf .reveal .slides section.title-slide,
+.print-pdf .reveal .slides section.title-slide {
+  background-color: #EAEEED !important;
+  padding: 125px 75px 45px 75px !important;
+}
+
+.reveal .slides section.title-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  background-color: #FFFFFF;
+  z-index: 0;
+}
+
+/* Content Slides */
+.reveal .slides section.content-slide,
+html.print-pdf .reveal .slides section.content-slide,
+.print-pdf .reveal .slides section.content-slide {
+  padding-top: 110px !important;
+  padding-left: 75px !important;
+  padding-right: 75px !important;
+  padding-bottom: 45px !important;
+  background-color: #FFFFFF !important;
+}
+
+.reveal .slides section.content-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #EAEEED;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   Watermark
+   ========================================================================== */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  font-family: 'Lato', sans-serif;
+  font-weight: 350;
+  font-size: 64px;
+  letter-spacing: 0.5px;
+  color: rgba(30, 45, 40, 0.065);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.questions-slide .watermark,
+.transition-slide .watermark {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+/* ==========================================================================
+   Accent Lines & Branding
+   ========================================================================== */
+.accent-line-top {
+  display: flex;
+  width: 95px;
+  height: 5px;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.accent-line-top .teal {
+  background-color: #2E9B85;
+  flex: 1;
+}
+
+.accent-line-top .orange {
+  background-color: #EA5A27;
+  flex: 1;
+}
+
+.accent-line-bottom {
+  width: 110px;
+  height: 6px;
+  background-color: #FFFFFF;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.ccny-logo {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 320px;
+  height: auto;
+  z-index: 3;
+}
+
+/* Title Slide Typography */
+.title-content {
+  position: relative;
+  z-index: 2;
+}
+
+.title-slide .course-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.title-slide .course-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  font-style: italic;
+  color: #1A1A1A;
+  margin-bottom: 38px;
+  line-height: 1.2;
+}
+
+.title-slide .lecture-topic {
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  font-style: italic;
+  color: #1A1A1A;
+  margin-bottom: 34px;
+  line-height: 1.25;
+}
+
+.title-slide .presenter-info {
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #4A4A4A;
+}
+
+.title-slide .presenter-info a {
+  color: #1A73E8;
+  text-decoration: underline;
+}
+
+.title-footer {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #2B2B2B;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Agenda Slide (2x2 Grid)
+   ========================================================================== */
+.agenda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 24px;
+  margin-top: 14px;
+}
+
+.agenda-card {
+  background: #FAFAFA;
+  border: 1.5px solid #E1E6EA;
+  border-radius: 8px;
+  border-left-width: 6px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.agenda-card.c-teal   { border-left-color: #2E9B85; }
+.agenda-card.c-blue   { border-left-color: #2980B9; }
+.agenda-card.c-orange { border-left-color: #EA5A27; }
+.agenda-card.c-purple { border-left-color: #8E44AD; }
+
+.agenda-tag {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.agenda-card.c-teal   .agenda-tag { color: #2E9B85; }
+.agenda-card.c-blue   .agenda-tag { color: #2980B9; }
+.agenda-card.c-orange .agenda-tag { color: #EA5A27; }
+.agenda-card.c-purple .agenda-tag { color: #8E44AD; }
+
+.agenda-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: #1A1A1A;
+  margin-bottom: 6px;
+}
+
+.agenda-desc {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.38;
+  color: #4A4A4A;
+}
+
+/* ==========================================================================
+   Two-Column Flex Layout
+   ========================================================================== */
+.slide-cols {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-top: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.slide-cols .col-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.slide-cols .col-media {
+  flex: 0 0 460px;
+  width: 460px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Figure Containers & Captions
+   ========================================================================== */
+.fig-container {
+  background: #FAFAFA;
+  border: 1.5px solid #E1E6EA;
+  border-radius: 8px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.fig-container img {
+  max-width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Full-width Hero Containers for Wide Figures */
+.hero-fig-box {
+  background: #FAFAFA;
+  border: 1.5px solid #E1E6EA;
+  border-radius: 8px;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.hero-fig-box img {
+  max-width: 100%;
+  max-height: 385px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}
+
+.fig-credit {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #7F8C8D;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.diagram-box {
+  background: #FAFAFA;
+  border: 1.5px solid #E1E6EA;
+  border-radius: 8px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.diagram-box svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Slide 3: Comparative Discovery Timelines
+   ========================================================================== */
+.timeline-wrapper {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-row {
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: 1.5px solid #E1E6EA;
+}
+
+.timeline-row.manual {
+  background: #F9FAFB;
+  border-left: 6px solid #7F8C8D;
+}
+
+.timeline-row.sdl {
+  background: #EAF7F4;
+  border-left: 6px solid #2E9B85;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.timeline-steps {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.tl-step {
+  flex: 1;
+  background: #FFFFFF;
+  border: 1px solid #D5DBDB;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.tl-arr {
+  color: #95A5A6;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Slide 13: MCTS 4-Phase Grid
+   ========================================================================== */
+.mcts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.mcts-card {
+  border-radius: 8px;
+  padding: 14px 18px;
+  background: #FAFAFA;
+  border: 1.5px solid #E1E6EA;
+  border-top-width: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.mcts-card.c-blue   { border-top-color: #2980B9; }
+.mcts-card.c-green  { border-top-color: #27AE60; }
+.mcts-card.c-orange { border-top-color: #E67E22; }
+.mcts-card.c-purple { border-top-color: #8E44AD; }
+
+.mcts-card-head {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: #2C3E50;
+  margin-bottom: 6px;
+}
+
+.mcts-card-body {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #222222;
+}
+
+/* ==========================================================================
+   Interactive Demo Controls (Slide 18)
+   ========================================================================== */
+.demo-ctrl-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 3;
+}
+
+.demo-btn {
+  background-color: #2E9B85;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 14px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.demo-btn.secondary {
+  background-color: #EA5A27;
+}
+
+.demo-btn:hover {
+  opacity: 0.9;
+}
+
+.demo-ctrl-bar label {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.demo-status {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+/* Floating Save Button */
+#saveBtn {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 99999;
+  padding: 8px 14px;
+  background: #2E9B85;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#saveBtn:hover {
+  background: #247c6a;
+}
+
+/* Questions / Transition Slide */
+.questions-slide h2,
+.transition-slide h2 {
+  font-size: 68px;
+  color: #FFFFFF;
+  margin-top: 13%;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Print Adjustments
+   ========================================================================== */
+@page {
+  size: 1280px 720px;
+  margin: 0;
+}
+
+@media print {
+  #saveBtn {
+    display: none !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .reveal .controls,
+  .reveal .progress,
+  .reveal .playback {
+    display: none !important;
+  }
+}
+
+html.print-pdf .reveal .controls,
+.print-pdf .reveal .controls,
+html.print-pdf #saveBtn,
+.print-pdf #saveBtn {
+  display: none !important;
+}

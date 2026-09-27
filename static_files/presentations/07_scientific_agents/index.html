@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Scientific Agents: Design, Synthesis, and Autonomous Discovery</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    
+    <!-- Custom Presentation Styling -->
+    <link rel="stylesheet" href="theme.css">
+
+    <!-- Plotly.js for Interactive Visualizations -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <!-- MathJax for LaTeX Equation Rendering -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <!-- Floating In-Browser Save Button
+    <button id="saveBtn">Download Updated HTML</button> -->
+
+    <div class="reveal">
+      <div class="slides" contenteditable="false">
+
+        <!-- ============================================================ -->
+        <!-- Slide 1: Title Slide                                         -->
+        <!-- ============================================================ -->
+        <section class="title-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <img class="ccny-logo" src="ccny-logo.png" alt="CCNY Logo" onerror="this.style.display='none'">
+
+          <div class="title-content">
+            <div class="accent-line-top">
+              <div class="teal"></div>
+              <div class="orange"></div>
+            </div>
+
+            <div class="course-title">CSc 59867-E: Senior Project II</div>
+            <div class="course-subtitle">AI Agents for Decision Making in the Real World</div>
+
+            <div class="lecture-topic">Scientific Agents: Design, Synthesis, and Autonomous Discovery</div>
+
+            <div class="presenter-info">
+              <div>By Saptarashmi Bandyopadhyay</div>
+              <div>Email: <a href="mailto:sbandyopadhyay@ccny.cuny.edu">sbandyopadhyay@ccny.cuny.edu</a></div>
+              <div>Assistant Professor of Computer Science</div>
+              <div>City College of New York and Graduate Center at CUNY</div>
+            </div>
+          </div>
+
+          <div class="title-footer">
+            September 28, 2026 CSc 59867 - E
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 2: Lecture Agenda & Roadmap                            -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Lecture Agenda &amp; Discovery Roadmap</h2>
+
+          <div class="agenda-grid">
+            <div class="agenda-card c-teal">
+              <div class="agenda-tag">Part I: Foundations</div>
+              <div class="agenda-title">The Autonomous Discovery Shift</div>
+              <div class="agenda-desc">
+                From Edisonian trial-and-error to closed-loop learning. Molecular graph representations, discrete action MDPs, and non-injective DAG topologies.
+              </div>
+            </div>
+
+            <div class="agenda-card c-blue">
+              <div class="agenda-tag">Part II: Inverse Design</div>
+              <div class="agenda-title">Generative Flow Networks (GFlowNets)</div>
+              <div class="agenda-desc">
+                Why standard RL mode-collapses on biological surrogates. Flow conservation equations, trajectory flow matching, and diverse scaffold discovery.
+              </div>
+            </div>
+
+            <div class="agenda-card c-orange">
+              <div class="agenda-tag">Part III: Planning</div>
+              <div class="agenda-title">Retrosynthesis &amp; 3N-MCTS</div>
+              <div class="agenda-desc">
+                The physical synthesizability barrier. Chemical reaction game trees, expansion policies, in-scope filtering, and double-blind human validations.
+              </div>
+            </div>
+
+            <div class="agenda-card c-purple">
+              <div class="agenda-tag">Part IV: Execution &amp; Safety</div>
+              <div class="agenda-title">Self-Driving Labs &amp; Governance</div>
+              <div class="agenda-desc">
+                Distributed orchestration (ChemOS), live Bayesian reaction optimization demo, Coscientist LLM tool-use, and deterministic biosecurity firewalls.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 3: Shift to Closed-Loop Science + Discovery Timelines  -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>The Shift to Closed-Loop Autonomous Science</h2>
+          
+          <ul>
+            <li>Classical materials/drug discovery relies on manual hypothesis formulation, serial bench chemistry, and intuitive trial-and-error, which often takes 10 to 20 years from lead to deployment.</li>
+            <li><strong>HTS (High-Throughput Screening) vs. Adaptive Agents:</strong> Static HTS blindly tests pre-enumerated libraries, whereas closed-loop agents adapt their search policy online based on experimental telemetry.</li>
+          </ul>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-row manual">
+              <div class="timeline-header">
+                <span>Manual Scientific Discovery (e.g. Edison)</span>
+                <span style="color:#7F8C8D;">10 &ndash; 20 Years</span>
+              </div>
+              <div class="timeline-steps">
+                <div class="tl-step">Literature Hypotheses</div>
+                <div class="tl-arr">&rarr;</div>
+                <div class="tl-step">Serial Bench Chemistry</div>
+                <div class="tl-arr">&rarr;</div>
+                <div class="tl-step">Manual Assays</div>
+                <div class="tl-arr">&rarr;</div>
+                <div class="tl-step" style="border-color:#C0392B; color:#C0392B;">High Attrition / Failure</div>
+              </div>
+            </div>
+
+            <div class="timeline-row sdl">
+              <div class="timeline-header">
+                <span style="color:#1E7E68;">Self-Driving Laboratory Cycle (e.g. Co-Scientist)</span>
+                <span style="color:#2E9B85;">Hours &ndash; Days</span>
+              </div>
+              <div class="timeline-steps">
+                <div class="tl-step" style="background:#EAF7F4; border-color:#2E9B85;">AI Agent Policy</div>
+                <div class="tl-arr" style="color:#2E9B85;">&rarr;</div>
+                <div class="tl-step" style="background:#EAF7F4; border-color:#2E9B85;">Robotic Execution</div>
+                <div class="tl-arr" style="color:#2E9B85;">&rarr;</div>
+                <div class="tl-step" style="background:#EAF7F4; border-color:#2E9B85;">Inline Analytics</div>
+                <div class="tl-arr" style="color:#2E9B85;">&rarr;</div>
+                <div class="tl-step" style="background:#2E9B85; color:#FFF; border-color:#2E9B85;">Bayesian Update &#8634;</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 4: Molecular Representations + Inline DAG Trajectory   -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Molecular Representations: Discrete Graphs &amp; DAGs</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text">
+              <ul>
+                <li><strong>Graph Formalism:</strong> A molecule is formalized as an attributed, labeled graph $m = (V, E)$, with atoms as vertices $v \in V$ and covalent bonds as edges $e \in E$.</li>
+                <li><strong>Sequential MDP:</strong> States $s_t$ represent partially constructed fragments; actions $a_t$ represent discrete atom or fragment attachments.</li>
+                <li><strong>Non-Injective Trajectories:</strong> Different action sequences yield identical molecules (e.g., adding C-C then -OH versus C-O then C-C). The state space is a <strong>DAG</strong>, not a tree.</li>
+              </ul>
+            </div>
+
+            <div class="col-media">
+              <div class="diagram-box">
+                <svg viewBox="0 0 440 280">
+                  <circle cx="45" cy="140" r="28" fill="#FFF" stroke="#2C3E50" stroke-width="2.5" stroke-dasharray="4 3"></circle>
+                  <text x="45" y="146" font-family="Raleway" font-weight="700" font-size="16" text-anchor="middle" fill="#2C3E50">s₀ (∅)</text>
+
+                  <line x1="72" y1="126" x2="155" y2="74" stroke="#2980B9" stroke-width="2.5"></line>
+                  <text x="105" y="90" font-family="Menlo" font-size="12" fill="#2980B9">+ C-C</text>
+
+                  <rect x="155" y="45" width="85" height="42" rx="6" fill="#EAF2F8" stroke="#2980B9" stroke-width="2"></rect>
+                  <text x="197" y="71" font-family="Lato" font-weight="700" font-size="14" text-anchor="middle" fill="#1A5276">CH₃-CH₃</text>
+
+                  <line x1="240" y1="66" x2="320" y2="120" stroke="#2980B9" stroke-width="2.5"></line>
+                  <text x="290" y="85" font-family="Menlo" font-size="12" fill="#2980B9">+ OH</text>
+
+                  <line x1="72" y1="154" x2="155" y2="206" stroke="#E67E22" stroke-width="2.5"></line>
+                  <text x="105" y="196" font-family="Menlo" font-size="12" fill="#E67E22">+ C-O</text>
+
+                  <rect x="155" y="190" width="85" height="42" rx="6" fill="#FDF6EC" stroke="#E67E22" stroke-width="2"></rect>
+                  <text x="197" y="216" font-family="Lato" font-weight="700" font-size="14" text-anchor="middle" fill="#B9770E">CH₃-OH</text>
+
+                  <line x1="240" y1="214" x2="320" y2="160" stroke="#E67E22" stroke-width="2.5"></line>
+                  <text x="290" y="200" font-family="Menlo" font-size="12" fill="#E67E22">+ C-C</text>
+
+                  <rect x="320" y="112" width="112" height="56" rx="8" fill="#EAF7F4" stroke="#2E9B85" stroke-width="3"></rect>
+                  <text x="376" y="136" font-family="Raleway" font-weight="700" font-size="15" text-anchor="middle" fill="#166555">Terminal x</text>
+                  <text x="376" y="156" font-family="Lato" font-size="13" text-anchor="middle" fill="#2E9B85">CH₃-CH₂-OH</text>
+                </svg>
+                <div class="diagram-caption">Distinct permutations converge to the same target: DAG state space</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 5: RL Failure + Native Plotly Mode Collapse Plot       -->
+        <!-- ============================================================ -->
+        <section class="content-slide" contenteditable="false">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Why Standard RL Fails in Chemical Design</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text" style="flex: 0.95;">
+              <ul>
+                <li><strong>The Reward Maximization Pitfall:</strong> Traditional RL maximizes expected return $\max_\pi \mathbb{E}_\pi [R(x)]$, collapsing probability mass onto a single trajectory mode.</li>
+                <li><strong>Surrogate Exploitation:</strong> Biological proxies (docking scores) are imperfect. Over-optimizing one narrow peak exploits surrogate artifacts (false positives).</li>
+                <li><strong>Diversity Requirement:</strong> Lead discovery demands candidate ensembles spread across distinct functional modes to survive downstream assay attrition.</li>
+              </ul>
+            </div>
+
+            <div class="col-media" style="flex: 1.05;">
+              <div id="rl-collapse-plot" style="width: 100%; height: 350px;"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 6: GFlowNets: Core Theory + bengio2021_fig1.png         -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Generative Flow Networks (GFlowNets): Core Theory</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text">
+              <ul>
+                <li><strong>The Sampling Objective:</strong> Train a stochastic policy $\pi(a\vert s)$ such that the terminal sampling probability is proportional to a positive reward:
+                  $$\pi(x) = \frac{R(x)}{Z} = \frac{R(x)}{\sum_{x' \in \mathcal{X}} R(x')}$$</li>
+                <li><strong>Network Flow Formulation:</strong> State DAG acts as a flow network: source $s_0$ enters with flow $F(s_0) = Z$; terminal sinks exit with flow $R(x)$.</li>
+                <li><strong>Flow Consistency:</strong> At every intermediate state $s'$, incoming flow equals outgoing flow:
+                  $$\sum_{s, a : T(s, a) = s'} F(s, a) = R(s') + \sum_{a' \in \mathcal{A}(s')} F(s', a')$$</li>
+              </ul>
+            </div>
+
+            <div class="col-media">
+              <div class="fig-container">
+                <img src="img/bengio2021_fig1.png" alt="GFlowNet Flow Network DAG">
+                <div class="fig-credit">Fig. 1 &mdash; Bengio et al. (2021), <em>arXiv:2106.04399</em></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 7: Flow Matching Objective + Valid SVG Diagram         -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>GFlowNet Training: The Flow-Matching Objective</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text" style="flex: 1.1; min-width: 0;">
+              <ul style="margin-top: 0;">
+                <li><strong>Analog to TD Learning:</strong> GFlowNet parameters $\theta$ minimize flow conservation violations across visited trajectories without state enumeration.</li>
+                <li><strong>Log-Flow Loss:</strong> Because flows grow exponentially near $s_0$, estimators parameterize log-flows $F_\theta^{\log}(s, a) = \log F(s, a)$:
+                  <div style="font-size: 0.84em; margin: 8px 0;">
+                    $$\begin{aligned}
+                    \mathcal{L}_{\theta, \epsilon}(\tau) = \sum_{s' \in \tau, s' \ne s_0} \Big( &\log \Big[ \epsilon + \sum_{s, a : T(s,a) = s'} \exp F_\theta^{\log}(s,a) \Big] \\
+                    &- \log \Big[ \epsilon + R(s') + \sum_{a' \in \mathcal{A}(s')} \exp F_\theta^{\log}(s',a') \Big] \Big)^2
+                    \end{aligned}$$
+                  </div>
+                </li>
+                <li><strong>Off-Policy Exploration:</strong> Constraints depend purely on network topology and endpoint rewards, enabling bias-free off-policy training.</li>
+              </ul>
+            </div>
+
+            <div class="col-media" style="flex: 0 0 440px; width: 440px;">
+              <div class="diagram-box">
+                <svg viewBox="0 0 440 310" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <marker id="arr-gray" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#95A5A6" />
+                    </marker>
+                    <marker id="arr-teal" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2E9B85" />
+                    </marker>
+                    <marker id="arr-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#EA5A27" />
+                    </marker>
+                  </defs>
+
+                  <rect x="8" y="8" width="424" height="124" rx="8" fill="#F8F9FA" stroke="#D5DBDB" stroke-width="1.5"/>
+                  <text x="20" y="28" font-family="Raleway, sans-serif" font-weight="700" font-size="12" fill="#5D6D7E">TREE-STRUCTURED MDP (Disjoint Paths)</text>
+                  
+                  <circle cx="50" cy="74" r="14" fill="#2C3E50"/>
+                  <text x="50" y="78" font-family="Lato, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">s₀</text>
+
+                  <line x1="66" y1="70" x2="140" y2="52" stroke="#95A5A6" stroke-width="2" marker-end="url(#arr-gray)"/>
+                  <line x1="66" y1="78" x2="140" y2="96" stroke="#95A5A6" stroke-width="2" marker-end="url(#arr-gray)"/>
+
+                  <circle cx="150" cy="50" r="10" fill="#BDC3C7"/>
+                  <circle cx="150" cy="98" r="10" fill="#BDC3C7"/>
+
+                  <line x1="162" y1="46" x2="225" y2="38" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+                  <line x1="162" y1="54" x2="225" y2="62" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+                  <line x1="162" y1="94" x2="225" y2="86" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+                  <line x1="162" y1="102" x2="225" y2="110" stroke="#BDC3C7" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+
+                  <circle cx="235" cy="36" r="7" fill="#E67E22"/><circle cx="235" cy="62" r="7" fill="#E67E22"/>
+                  <circle cx="235" cy="86" r="7" fill="#E67E22"/><circle cx="235" cy="110" r="7" fill="#E67E22"/>
+
+                  <text x="258" y="70" font-family="Lato, sans-serif" font-size="12" fill="#7F8C8D">Exponential blowup</text>
+                  <text x="258" y="86" font-family="Lato, sans-serif" font-size="12" fill="#7F8C8D">Paths never meet</text>
+
+                  <rect x="8" y="142" width="424" height="155" rx="8" fill="#F4FAF8" stroke="#2E9B85" stroke-width="2"/>
+                  <text x="20" y="164" font-family="Raleway, sans-serif" font-weight="700" font-size="12" fill="#1E7E68">DAG FLOW NETWORK (Flow Conservation)</text>
+
+                  <circle cx="50" cy="220" r="15" fill="#2C3E50"/>
+                  <text x="50" y="224" font-family="Lato, sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">s₀</text>
+                  <text x="50" y="248" font-family="Menlo, monospace" font-size="10" fill="#2C3E50" text-anchor="middle">F=Z</text>
+
+                  <line x1="67" y1="214" x2="140" y2="194" stroke="#2E9B85" stroke-width="2.5" marker-end="url(#arr-teal)"/>
+                  <line x1="67" y1="226" x2="140" y2="246" stroke="#2E9B85" stroke-width="2.5" marker-end="url(#arr-teal)"/>
+
+                  <circle cx="150" cy="192" r="11" fill="#2E9B85"/>
+                  <circle cx="150" cy="248" r="11" fill="#2E9B85"/>
+
+                  <line x1="163" y1="196" x2="235" y2="215" stroke="#2E9B85" stroke-width="3" marker-end="url(#arr-teal)"/>
+                  <line x1="163" y1="244" x2="235" y2="225" stroke="#2E9B85" stroke-width="3" marker-end="url(#arr-teal)"/>
+
+                  <circle cx="248" cy="220" r="15" fill="#EA5A27"/>
+                  <text x="248" y="225" font-family="Raleway, sans-serif" font-weight="700" font-size="12" fill="#FFF" text-anchor="middle">s'</text>
+
+                  <line x1="265" y1="220" x2="325" y2="220" stroke="#EA5A27" stroke-width="3" marker-end="url(#arr-orange)"/>
+
+                  <rect x="335" y="206" width="55" height="28" rx="5" fill="#C0392B"/>
+                  <text x="362" y="224" font-family="Raleway, sans-serif" font-weight="700" font-size="12" fill="#FFF" text-anchor="middle">R(x)</text>
+
+                  <rect x="110" y="268" width="220" height="20" rx="4" fill="#E8F8F5" stroke="#A3E4D7" stroke-width="1"/>
+                  <text x="220" y="282" font-family="Menlo, monospace" font-size="11" font-weight="bold" fill="#117A65" text-anchor="middle">Σ F_in(s') = Σ F_out(s')</text>
+                </svg>
+                <div class="diagram-caption">Tree branching vs. DAG flow conservation</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 8: Case Study: De Novo Design + bengio2021_fig5.png   -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Case Study: De Novo Small-Molecule Design</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text">
+              <ul>
+                <li><strong>Assembly Framework:</strong> Discrete chemical fragments joined into junction tree representations. Actions select fragment additions and stem attachment atoms.</li>
+                <li><strong>Target Objective:</strong> High binding affinity to soluble epoxide hydrolase (sEH), scored via an MPNN proxy of AutoDock Vina binding energy.</li>
+                <li><strong>Mode Discovery:</strong> GFlowNets discovered $>1{,}500$ distinct high-affinity modes ($R(x) > 8$), compared to $<100$ modes for PPO and MARS baselines.</li>
+                <li><strong>Diversity:</strong> Average pairwise Tanimoto similarity was $0.44$ vs $0.62$ for PPO (lower indicates greater diversity).</li>
+              </ul>
+            </div>
+
+            <div class="col-media">
+              <div class="fig-container">
+                <img src="img/bengio2021_fig5.png" alt="GFlowNet Cumulative Modes Discovered">
+                <div class="fig-credit">Fig. 5 &mdash; Bengio et al. (2021), <em>arXiv:2106.04399</em></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 9: The Synthesizability Barrier                        -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>The Synthesizability Barrier in Generative Design</h2>
+          <ul>
+            <li>Generative models readily produce billions of theoretical chemical graphs exhibiting optimal binding metrics, yet upwards of $99\%$ cannot be physically synthesized in a laboratory.</li>
+            <li><strong>Hidden Physical Constraints:</strong> Unstable chemical bonds, steric strains, and inaccessible stereocenters are completely invisible to naive graph rewards. Production is strictly bounded by the availability of stable, commercial precursors.</li>
+            <li><strong>Forward vs. Retrosynthetic Search:</strong> Forward prediction computes product $C$ from known reactants $A + B$. Retrosynthesis inverts this challenge: recursively breaking down target $C \Rightarrow B \Rightarrow A$ until reaching catalog building blocks $\mathcal{B}$.</li>
+          </ul>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 10: Retrosynthesis as an MDP + segler2018_fig1.png     -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Retrosynthesis Formalized as an MDP</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text">
+              <ul>
+                <li><strong>State Space $\mathcal{S}$:</strong> Precursor sets $\{m_1, \dots, m_k\}$ initiated at root $s_0 = \{m_{\text{target}}\}$. Actions $a$ denote chemical disconnection rules applied to a molecule.</li>
+                <li><strong>Terminal Conditions &amp; Catalog $\mathcal{B}$:</strong> A state is solved when every molecule belongs to commercial building blocks $\mathcal{B}$. Branches fail if depth $> L_{\max} = 25$.</li>
+                <li><strong>Reward Structure:</strong>
+                  $$\mathcal{R}(s) = \begin{cases} +10 & \text{all } m_i \in \mathcal{B} \text{ (solved)} \\ \text{fraction solved} & \text{partial leaf rollout} \\ -1 & \text{failed branch / depth limit} \end{cases}$$</li>
+              </ul>
+            </div>
+
+            <div class="col-media">
+              <div class="fig-container">
+                <img src="img/segler2018_fig1.png" alt="Retrosynthesis Chemical & Search Tree Representation">
+                <div class="fig-credit">Fig. 1 &mdash; Segler et al., <em>Nature</em> 555, 604–610 (2018)</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 11: 3N-MCTS Architecture + segler2018_fig2a.png        -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>The 3N-MCTS Architecture (Segler et al., 2018)</h2>
+          
+          <ul style="margin-bottom: 8px;">
+            <li><strong>Three Integrated Neural Networks:</strong> (1) <em>Expansion Policy</em> prioritizing candidate rules from 301,671 templates; (2) <em>In-Scope Filter</em> verifying chemical/regiochemical viability; (3) <em>Rollout Policy</em> predicting reachability.</li>
+            <li><strong>Scale:</strong> Trained on $12.4\text{ million}$ single-step chemical reactions mined from Reaxys.</li>
+          </ul>
+
+          <div class="hero-fig-box" style="max-width: 980px;">
+            <img src="img/segler2018_fig2a.png" style="max-height: 290px;" alt="3N-MCTS Search Loop">
+            <div class="fig-credit">Fig. 2a &mdash; Segler et al., <em>Nature</em> 555, 604–610 (2018)</div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 12: Expansion & In-Scope Pipeline + segler2018_fig2b   -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Expansion Policy &amp; In-Scope Classification</h2>
+          
+          <ul style="margin-bottom: 8px;">
+            <li><strong>Branching Pruning:</strong> Exhaustive rules yield 46,175 branches per molecule. ECFP4 fingerprint expansion prunes to the top-50 actions, capturing $72.5\%$ accuracy while slashing search width.</li>
+            <li><strong>In-Scope Filter:</strong> Dual-branch cosine proximity network trained against $100\text{ million}$ synthetic negative reactions. Logits correlate with DFT LUMO energies ($r^2 = 0.74$) and Hammett constants ($r^2 = 0.78$).</li>
+          </ul>
+
+          <div class="hero-fig-box" style="max-width: 1040px;">
+            <img src="img/segler2018_fig2b.png" style="max-height: 285px;" alt="Expansion and In-Scope Filter Procedure">
+            <div class="fig-credit">Fig. 2b &mdash; Segler et al., <em>Nature</em> 555, 604–610 (2018)</div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 13: MCTS Phases (Standard Canonical Font Size)         -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>MCTS Phases for Synthesis Planning</h2>
+          
+          <div class="mcts-grid">
+            <div class="mcts-card c-blue">
+              <div class="mcts-card-head">1. Selection (PUCT)</div>
+              <div class="mcts-card-body">
+                Descend the tree choosing moves maximizing prior confidence and exploration:
+                <div style="font-size: 0.95em; text-align: center; margin: 4px 0;">
+                  $$a_t = \arg\max \left( \frac{Q}{N} + c P \frac{\sqrt{N_{\text{parent}}}}{1 + N} \right)$$
+                </div>
+                Prior $P(s,a)$ supplied by the Expansion Highway Policy.
+              </div>
+            </div>
+
+            <div class="mcts-card c-green">
+              <div class="mcts-card-head">2. Expansion</div>
+              <div class="mcts-card-body">
+                When a leaf node is visited twice, valid chemical reactions are instantiated as children.
+                Proposed transformations are strictly screened by the <strong>In-Scope Filter</strong> to prune chemically unviable steps.
+              </div>
+            </div>
+
+            <div class="mcts-card c-orange">
+              <div class="mcts-card-head">3. Rollout Simulation</div>
+              <div class="mcts-card-body">
+                The fast rollout policy ($10\text{ ms}$ vs. $90\text{ ms}$ expansion) executes rapid, non-branching playouts to estimate the probability of reaching catalog precursors $\mathcal{B}$.
+              </div>
+            </div>
+
+            <div class="mcts-card c-purple">
+              <div class="mcts-card-head">4. Value Backup</div>
+              <div class="mcts-card-body">
+                Terminal outcomes (+10 solved, -1 failed) propagate back up the active branch.
+                Action values $Q(s,a)$ and visit counts $N(s,a)$ update, penalizing lengthy and un-converged routes.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 14: Empirical Validation: Double-Blind Expert Testing  -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Empirical Validation: Double-Blind Expert Testing</h2>
+          <ul>
+            <li><strong>Quantitative Search Benchmark:</strong> Evaluated on $497$ diverse drug-like targets reported strictly post-2015. 3N-MCTS resolved $95.2\%$ of molecules in an average of $13.0\text{ s}$, while heuristic BFS solved only $45.6\%$ and required $433.4\text{ s}$.</li>
+            <li><strong>Human Evaluation (Test A — MCTS vs. Literature):</strong> In double-blind tests with 45 professional chemists across Münster and Shanghai, researchers exhibited no statistically significant preference ($P = 0.26$) for human literature routes ($43.0\%$) over MCTS routes ($57.0\%$).</li>
+            <li><strong>Human Evaluation (Test B — MCTS vs. Heuristic BFS):</strong> Chemists decisively favored 3N-MCTS ($68.2\%$ preference, $P = 0.01$), identifying heuristic BFS steps as chemically unviable.</li>
+          </ul>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 15: Self-Driving Laboratories (SDLs)                   -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Self-Driving Labs (from Code 💻 to Atoms ⚛️)</h2>
+          <ul>
+            <li>A validated retrosynthetic plan remains theoretical. Physical synthesis demands automating reagent dispensing, phase extraction, heating, and characterization without manual intervention.</li>
+            <li><strong>Self-Driving Laboratory Architectures:</strong> Integrated robotic workcells couple liquid handling platforms with analytical instruments (HPLC, GC-MS, UV-Vis, NMR) to close the physical discovery cycle.</li>
+            <li><strong>Software Design Requirements:</strong> Middleware must decouple high-level agent policies from vendor-specific robotic firmware, providing asynchronous execution and automated recovery for physical faults (e.g., pipette drop errors, fluid clogs).</li>
+          </ul>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 16: ChemOS: Architecture + roch2020_fig1.png           -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>ChemOS: Distributed Lab Orchestration (Roch et al., 2020)</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text">
+              <ul>
+                <li><strong>Modular 6-Tier Architecture:</strong> Designed to coordinate closed-loop experimentation across distributed hardware platforms:
+                  <ul>
+                    <li><em>Workflow Manager:</em> Asynchronous task queue &amp; state recovery.</li>
+                    <li><em>AI / Optimization:</em> Hosts Bayesian optimization packages (Phoenics, SMAC).</li>
+                    <li><em>Robotics &amp; Characterization:</em> Translates recipe vectors into pump/arm signals and ingests sensor telemetry.</li>
+                  </ul>
+                </li>
+                <li><strong>Decoupling Advantage:</strong> Swapping a liquid handler or optimizer requires only editing a config file.</li>
+              </ul>
+            </div>
+
+            <div class="col-media">
+              <div class="fig-container">
+                <img src="img/roch2020_fig1.png" alt="ChemOS Modular Hexagonal Architecture">
+                <div class="fig-credit">Fig. 1 &mdash; Roch et al., <em>PLOS ONE</em> 15(4), e0229862 (2020)</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 17: Autonomous Process Optimization in ChemOS          -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Autonomous Process Optimization in ChemOS</h2>
+          <ul>
+            <li><strong>Multi-Variable Closed-Loop Tuning:</strong> Autonomous agents tuned complex continuous physical search spaces (RGB color matching, target pH, and fluid density formulations) to target specs in $\le 25$ iterations without human calibration.</li>
+            <li><strong>Intercontinental Hardware Control:</strong> Master ChemOS orchestrators in Cambridge, USA remotely controlled a North Robotics liquid handler and Agilent HPLC located in Vancouver, Canada.</li>
+            <li><strong>Robust Chromatography Calibration:</strong> Over 100 unattended consecutive runs, Bayesian optimization mapped non-linear fluidic delay parameters, achieving maximal peak separation far more efficiently than classical Design of Experiments.</li>
+          </ul>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 18: Live Demo: ChemOS Reaction Optimization Engine     -->
+        <!-- ============================================================ -->
+        <section class="content-slide" contenteditable="false">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Live Demo: ChemOS Active Reaction Optimization</h2>
+          <p style="font-size: 18px; line-height: 1.35; margin: 0 0 8px 0; color: #555555;">
+            An autonomous agent navigating an unknown continuous reaction landscape (e.g., catalyst loading vs. temperature) to maximize yield under tight wet-lab assay budgets.
+          </p>
+          
+          <div class="demo-ctrl-bar">
+            <button class="demo-btn" id="bo-step">▶ Run Next Wet-Lab Reaction</button>
+            <button class="demo-btn secondary" id="bo-reset">↺ Reset Campaign</button>
+            <label>
+              Exploration Weight (&beta;):
+              <input type="range" id="bo-beta" min="0" max="6" step="0.5" value="2.5" style="width: 110px;">
+              <span id="bo-beta-val">2.5</span>
+            </label>
+            <span class="demo-status" id="bo-status">Physical Runs: 2 / 12</span>
+          </div>
+
+          <div id="bo-plot" style="width: 100%; height: 385px;"></div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 19: Coscientist Architecture + boiko2023_fig1a.png     -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Coscientist: LLM-Driven Autonomous Chemistry</h2>
+          
+          <ul style="margin-bottom: 8px;">
+            <li><strong>LLMs as Laboratory Orchestrators:</strong> Frontier models exhibit broad chemical reasoning, but require tool augmentation to execute code, search scientific literature, and drive robotics.</li>
+            <li><strong>Modular Architecture (Boiko et al., Nature 2023):</strong> Central GPT-4 Planner issues structured ReAct commands (e.g. <code>GOOGLE</code>, <code>PYTHON</code>, <code>DOCUMENTATION</code>, <code>EXPERIMENT</code>) to dedicated sub-modules.</li>
+          </ul>
+
+          <div class="hero-fig-box" style="max-width: 980px;">
+            <img src="img/boiko2023_fig1a.png" style="max-height: 295px;" alt="Coscientist System Architecture Schema">
+            <div class="fig-credit">Fig. 1a &mdash; Boiko et al., <em>Nature</em> 624, 570–578 (2023)</div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 20: Hardware Grounding + boiko2023_fig3.png            -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Grounding Code in Lab Hardware: Opentrons &amp; Cloud Labs</h2>
+          
+          <ul style="margin-bottom: 8px;">
+            <li><strong>Vector Search over Evolving Hardware APIs:</strong> When tasked with operating the Opentrons OT-2 heater-shaker (released post-cutoff), Coscientist queried its documentation vector index, caught syntax errors, and self-corrected method calls dynamically.</li>
+            <li><strong>Cloud Lab Execution:</strong> Compiled procedures into Emerald Cloud Lab's Symbolic Lab Language (SLL), selecting correct parameters across 114 instruments and 1,110 reagents.</li>
+          </ul>
+
+          <div class="hero-fig-box" style="max-width: 1040px;">
+            <img src="img/boiko2023_fig3.png" style="max-height: 285px;" alt="Documentation Vector Retrieval Pipeline">
+            <div class="fig-credit">Fig. 3 &mdash; Boiko et al., <em>Nature</em> 624, 570–578 (2023)</div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 21: Physical Catalysis Validation (Theory/Setup)       -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Physical Validation: Catalytic Cross-Coupling Reactions</h2>
+          <ul>
+            <li><strong>Autonomous Benchmarking:</strong> Coscientist was tasked with synthesizing complex biaryl compounds via palladium-catalyzed Suzuki-Miyaura and Sonogashira cross-coupling reactions.</li>
+            <li><strong>End-to-End Decision Execution:</strong>
+              <ul>
+                <li><em>Reagent Pairing:</em> Selected compatible reaction partners without human prompting.</li>
+                <li><em>Stoichiometry:</em> Executed isolated Python code to determine exact dispensing volumes.</li>
+                <li><em>Thermal Control:</em> Scheduled Opentrons liquid transfers and heated at $75^\circ\text{C}$ for 60 min.</li>
+              </ul>
+            </li>
+            <li><strong>Analytical Confirmation:</strong> Reaction mixtures were characterized via Gas Chromatography-Mass Spectrometry (GC-MS), confirming target product formation matching pure analytical standards.</li>
+          </ul>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 22: Dedicated Analytical Evidence Slide + boiko2023_fig5 -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Empirical Execution: Palladium Catalysis &amp; GC-MS Validation</h2>
+
+          <div class="hero-fig-box" style="max-width: 1060px; padding: 10px 14px;">
+            <img src="img/boiko2023_fig5.png" style="max-height: 440px;" alt="Coscientist Physical Cross-Coupling GC-MS Validation">
+            <div class="fig-credit">Fig. 5 &mdash; Boiko et al., <em>Nature</em> 624, 570–578 (2023). TIC chromatograms confirm biphenyl (9.53 min) and diphenylacetylene (12.92 min).</div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 23: Frontiers, Guardrails & Crisp SVG Security Block   -->
+        <!-- ============================================================ -->
+        <section class="content-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <div class="accent-line-top"><div class="teal"></div><div class="orange"></div></div>
+          <h2>Frontiers, Guardrails, and Project Horizons</h2>
+          
+          <div class="slide-cols">
+            <div class="col-text">
+              <ul style="margin-top: 0;">
+                <li><strong>Biosecurity Dual-Use Risks:</strong> Uncontrolled LLMs can be manipulated into synthesizing dangerous materials. Execution environments must enforce deterministic chemical screening.</li>
+                <li><strong>Looking to the next lecture:</strong> Scaling from small molecules to macromolecular design, de novo protein engineering, and high-fidelity cellular biology simulations.</li>
+              </ul>
+            </div>
+
+            <div class="col-media">
+              <div class="diagram-box">
+                <svg viewBox="0 0 440 310">
+                  <rect x="20" y="10" width="400" height="54" rx="8" fill="#F4F6F7" stroke="#2C3E50" stroke-width="2"></rect>
+                  <text x="220" y="34" font-family="Raleway" font-weight="700" font-size="16" text-anchor="middle" fill="#2C3E50">Agent Action / Synthesis Recipe</text>
+                  <text x="220" y="52" font-family="Lato" font-size="13" text-anchor="middle" fill="#7F8C8D">Generated Chemical Transformation Intent</text>
+
+                  <line x1="220" y1="64" x2="220" y2="105" stroke="#C0392B" stroke-width="3"></line>
+                  <polygon points="214,103 220,115 226,103" fill="#C0392B"></polygon>
+                  <text x="228" y="92" font-family="Menlo" font-size="11" font-weight="700" fill="#C0392B">DISPATCH</text>
+
+                  <rect x="20" y="115" width="400" height="75" rx="8" fill="#FDF2E9" stroke="#C0392B" stroke-width="2.5"></rect>
+                  <text x="220" y="142" font-family="Raleway" font-weight="700" font-size="16" text-anchor="middle" fill="#900C3F">🛡️ AI Agent Governance</text>
+                  <text x="220" y="162" font-family="Lato" font-size="12" text-anchor="middle" fill="#B03A2E">Automated Convention Screening</text>
+                  <text x="220" y="178" font-family="Lato" font-size="12" text-anchor="middle" fill="#B03A2E">Checking against dangerous materials / Exotherm Filter</text>
+
+                  <line x1="140" y1="190" x2="105" y2="230" stroke="#27AE60" stroke-width="2.5"></line>
+                  <polygon points="100,223 100,235 110,232" fill="#27AE60"></polygon>
+                  <text x="75" y="210" font-family="Lato" font-weight="700" font-size="12" fill="#27AE60">✓ Validated</text>
+
+                  <line x1="300" y1="190" x2="335" y2="230" stroke="#27AE60" stroke-width="2.5"></line>
+                  <polygon points="330,232 340,235 340,223" fill="#27AE60"></polygon>
+                  <text x="340" y="210" font-family="Lato" font-weight="700" font-size="12" fill="#27AE60">✓ Validated</text>
+
+                  <rect x="15" y="235" width="195" height="60" rx="8" fill="#EAF2F8" stroke="#2980B9" stroke-width="2"></rect>
+                  <text x="112" y="260" font-family="Raleway" font-weight="700" font-size="15" text-anchor="middle" fill="#1A5276">Compute Infrastructure</text>
+                  <text x="112" y="280" font-family="Lato" font-size="12" text-anchor="middle" fill="#2980B9">Molecular Docking &amp; Folding</text>
+
+                  <rect x="230" y="235" width="195" height="60" rx="8" fill="#EAFAF1" stroke="#27AE60" stroke-width="2"></rect>
+                  <text x="327" y="260" font-family="Raleway" font-weight="700" font-size="15" text-anchor="middle" fill="#196F3D">Physical Lab</text>
+                  <text x="327" y="280" font-family="Lato" font-size="12" text-anchor="middle" fill="#27AE60">Opentrons / ChemOS Workcell</text>
+                </svg>
+                <div class="diagram-caption">Deterministic safety gating before compute &amp; robotic dispatch</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- Slide 24: Transition / Questions Slide                       -->
+        <!-- ============================================================ -->
+        <section data-background-color="#E65814" class="questions-slide transition-slide">
+          <div class="watermark">Saptarashmi Bandyopadhyay</div>
+          <h2>Questions?</h2>
+          <div class="accent-line-bottom"></div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Reveal.js JavaScript Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: false,
+        hash: true,
+        transition: 'none',
+        width: 1280,
+        height: 720,
+        margin: 0.04,
+        pdfMaxPagesPerSlide: 1,
+        pdfSeparateFragments: false
+      });
+
+      // Robust Browser Save Handler
+      const saveBtn = document.getElementById('saveBtn');
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          const clone = document.documentElement.cloneNode(true);
+          
+          // Clean up runtime elements injected by Reveal
+          const runtimeSelectors = ['.backgrounds', '.controls', '.progress', '.speaker-notes', '.pause-overlay', '.aria-status', '#js-plotly-tester'];
+          runtimeSelectors.forEach(sel => {
+            const el = clone.querySelector(sel);
+            if (el) el.remove();
+          });
+
+          // Reset slide classes so Reveal can reinitialize cleanly
+          clone.querySelectorAll('.slides section').forEach(sec => {
+            sec.classList.remove('past', 'present', 'future');
+            sec.removeAttribute('style');
+            sec.removeAttribute('hidden');
+            sec.removeAttribute('aria-hidden');
+          });
+
+          const blob = new Blob([clone.outerHTML], { type: 'text/html' });
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = 'scientific-agents-presentation.html';
+          a.click();
+        });
+      }
+    </script>
+
+    <!-- Decoupled Interactive Demo Script -->
+    <script src="demo-bo.js"></script>
+  </body>
+</html>
