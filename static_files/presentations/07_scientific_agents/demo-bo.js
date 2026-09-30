@@ -259,7 +259,7 @@
     });
 
     const statusEl = document.getElementById('bo-status');
-    if (statusEl) statusEl.textContent = `Physical Runs: ${sampledX.length} / 12`;
+    if (statusEl) statusEl.textContent = `Simulated Runs: ${sampledX.length} / 14`;
   }
 
   function stepAgent() {
