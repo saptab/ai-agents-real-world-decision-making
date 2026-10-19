@@ -1,5 +1,6 @@
 ---
 title: "Lecture 2: Tasks and Problem Formulation"
+date: 2026-09-02
 type: lecture
 tldr: "Formulating decision-making tasks, defining objectives, and constraints for AI agents."
 thumbnail: "/static_files/presentations/lec01.jpg"
