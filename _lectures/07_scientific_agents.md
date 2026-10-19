@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2026-09-28
-title: "Scientific Agents: Design, Synthesis, and Autonomous Discovery"
+title: "Lecture 7: Scientific Agents: Design, Synthesis, and Autonomous Discovery"
 tldr: "Autonomous closed-loop discovery, generative inverse molecular design with GFlowNets, 3N-MCTS retrosynthesis planning, ChemOS orchestration, and Coscientist robotic execution."
 thumbnail: /static_files/presentations/lec01.jpg
 links:

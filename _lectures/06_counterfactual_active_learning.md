@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2026-09-23
-title: "Counterfactual Design, Active Learning, and Autonomous Exploration"
+title: "Lecture 6: Counterfactual Design, Active Learning, and Autonomous Exploration"
 tldr: "Multi-agent credit assignment, Gaussian process surrogates, batch expected improvement, and intrinsic exploration with random network distillation."
 thumbnail: "/static_files/presentations/lec01.jpg"
 links:

@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2026-09-09
-title: "Scaling to Real-World Deployment"
+title: "Lecture 3: Scaling to Real-World Deployment"
 tldr: "Four-tier autonomous architecture, Sim2Real alignment, real-time control loops, and fluid dynamics in automated experimentation."
 thumbnail: "/static_files/presentations/lec01.jpg"
 
