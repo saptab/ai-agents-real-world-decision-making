@@ -1,4 +1,4 @@
-#     **CSc 59867: Senior Project II** ***AI Agents for Decision Making in the Real World***
+#     **CSc 59867-E: Senior Project II** ***AI Agents for Decision Making in the Real World***
 
 **Time:** Fall 2026, Mon/Wed 2:00p-3:15p		**Room:** SH-205  
 **Prof:** Saptarashmi Bandyopadhyay                    	**TA:** N/A  
@@ -55,7 +55,7 @@ The second semester (Fall 2026\) will focus on implementation and scale up the b
 2. Rollout, Policy Iteration, and Distributed Reinforcement Learning by Dimitri P. Bertsekas, 2020 [https://web.mit.edu/dimitrib/www/dp\_rollout\_book.html](https://web.mit.edu/dimitrib/www/dp_rollout_book.html) \+ [https://web.mit.edu/dimitrib/www/Rollout\_Complete%20Book.pdf](https://web.mit.edu/dimitrib/www/Rollout_Complete%20Book.pdf)   
 3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/\#download](https://www.marl-book.com/#download)   
 4. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 (including video lectures) [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html) \+ [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)   
-5. Deep Learning by Ian Goodfellow, 2012 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)   
+5. Deep Learning by Ian Goodfellow, 2016 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)
 6. An Introduction to Multi-Agent Systems by Michael Wooldridge, 2001  [https://uranos.ch/research/references/Wooldridge\_2001/TLTK.pdf](https://uranos.ch/research/references/Wooldridge_2001/TLTK.pdf)   
 7. 6G Flagship Book, 2023 [https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/](https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/)   
 8. Selected open-source research papers will be provided by the Professor
@@ -119,8 +119,6 @@ The course schedule for the class (subject to revision) provides class topics an
 
 Specific subtopics discussed in a class will be mentioned in the syllabus to help students revise during exams and to help them in their class projects.
 
-All slides will be uploaded to the website within a few days to a week after class.
-
 | DATE | TOPIC | Due Dates (Assignments/Project outcomes) |
 | :---- | :---- | :---- |
 | **Aug 31** | Introduction: Implementing AI Agents in the Real and Virtual World |  |
@@ -136,18 +134,18 @@ All slides will be uploaded to the website within a few days to a week after cla
 | **Oct 5** | Advanced Topics: Financial Agents, Stock Portfolio Orchestration, and Trading |  |
 | **Oct 7** | Advanced Topics: Real-World Supply Chain Logistics and Orchestration |  |
 | **Oct 13** *(Follows Monday Schedule)* | Advanced Topics: Drone Swarms, Autonomous Vehicles, and Transportation  Advanced Topics: Augmented Reality (AR/VR/XR) and Hardware Agents |  |
-| **Oct 14** | **New Developments:** Quantum Control Mechanisms and Non-Deterministic AI |  |
-| **Oct 19** | Navigating Open-Ended Problems, Establishing New Metrics, and Reliability | **Bi-Weekly** Research Project Update 1 Due on **Oct 19** |
-| **Oct 21** | MidTerm Exam Project Presentations (Part I) | MidTerm Exam Project Presentation (with 1-page report) Due |
-| **Oct 26** | MidTerm Exam Project Presentations (Part II) |  |
-| **Oct 28** | Scaling Up: Distributed Processing and B200 GPU Utilization on Empire AI |  |
-| **Nov 2** | Guest Lecture: Perspectives from Industry and Big Tech | **Bi-Weekly** Research Project Update 2 Due on **Nov 2** |
+| **Oct 14** | **New Developments:** Quantum Control Mechanisms and Non-Deterministic AI | MidTerm Exam Project Presentation with 1-page slide Due |
+| **Oct 19** | Navigating Open-Ended Problems, Establishing New Metrics, and Reliability |  |
+| **Oct 21** | MidTerm Exam Project Presentations (Part I) | MidTerm Exam Project 1-page abstract report Due on **Oct 23** |
+| **Oct 26** | MidTerm Exam Project Presentations (Part II) | In-Class Classwork 2 |
+| **Oct 28** | Scaling Up: Distributed Processing and B200 GPU Utilization on Empire AI | **Bi-Weekly** Research Project Update 1 Due on **Oct 28** |
+| **Nov 2** | Guest Lecture: Perspectives from Industry and Big Tech |  |
 | **Nov 4** | Guest Lecture: Perspectives from Academia, National Labs, and Defense |  |
 | **Nov 9** | Troubleshooting Implementations: Overcoming the "Moravec's Paradox" in Robotics |  |
-| **Nov 11** | Trust and Alignment: Preventing Reward Hacking and Pathological Agent Optimizations | Hand-Written Research Paper Review 2 Due on **Nov 11** |
-| **Nov 16** | Open-Source Licensing, Hugging Face Integration, and Deployment Strategies | **Bi-Weekly** Research Project Update 3 Due on **Nov 16** |
-| **Nov 18** | Future Horizons: Interstellar Internet and Advanced Sensing Networks |  |
-| **Nov 23** | Hands-On Coding Lab / Project Troubleshooting |  |
+| **Nov 11** | Trust and Alignment: Preventing Reward Hacking and Pathological Agent Optimizations | **Bi-Weekly** Research Project Update 2 Due on **Nov 11** |
+| **Nov 16** | Open-Source Licensing, Hugging Face Integration, and Deployment Strategies |  |
+| **Nov 18** | Future Horizons: Interstellar Internet and Advanced Sensing Networks | In-Class Classwork 3 |
+| **Nov 23** | Hands-On Coding Lab / Project Troubleshooting | **Bi-Weekly** Research Project Update 3 Due on **Nov 23** |
 | **Nov 25** | No Classes Scheduled (**Thanksgiving Recess**) |  |
 | **Nov 30** | Finalizing 8-Page Research Reports and LaTeX Formatting | **Bi-Weekly** Research Project Update 4 Due on **Nov 30** |
 | **Dec 2** | Course Wrap-up: Preparing for Job Interviews, Graduate School, and Academic Milestones |  |
@@ -251,11 +249,11 @@ High-quality class projects should aim for submission to:
 
 – **Collaboration Policy**
 
-Each student in the team has to clearly outline their individual research tasks as well as their tasks jointly done in a group for their projects in the six Research Progress Update assignment submissions. Every assignment will be clarified by the Professor about whether they are individual or group submissions in the assignment description. Within 1 team, each of the two students are expected to functionally collaborate. Across teams, students can discuss their project ideas in class, office hours, or midterm exam review while maintaining their unique innovation in their respective projects. Students have to ensure they are clearly following class policies.
+Each student in the team has to clearly outline their individual research tasks as well as their tasks jointly done in a group for their projects in the five Research Progress Update assignment submissions. Every assignment will be clarified by the Professor about whether they are individual or group submissions in the assignment description. Within 1 team, each of the two students are expected to functionally collaborate. Across teams, students can discuss their project ideas in class, office hours, or midterm exam review while maintaining their unique innovation in their respective projects. Students have to ensure they are clearly following class policies.
 
 – **Research Project Feasibility Updates**
 
-     The students should follow and update the specifics in their project based on the Professor’s feedback in updating their project feasibility, specially from the Project Abstract, Midterm Review and six Research Progress Update assignments. Research Topics will initially be assigned by the Professor. If students would like to change the topics, they need to speak with the Professor within 1 week of topic assignment.
+     The students should follow and update the specifics in their project based on the Professor’s feedback in updating their project feasibility, specially from the Project Abstract, Midterm Review and five Research Progress Update assignments. Research Topics will initially be assigned by the Professor. If students would like to change the topics, they need to speak with the Professor within 1 week of topic assignment.
 
 **– GenAI Policy**
 
@@ -270,12 +268,12 @@ Each student in the team has to clearly outline their individual research tasks 
 
 –  **CUNY CCNY Resources** 
 
-* Accessability [https://www.ccny.cuny.edu/accessability](https://www.ccny.cuny.edu/accessability)   
+* Accessibility [https://www.ccny.cuny.edu/accessability](https://www.ccny.cuny.edu/accessability)
 * Health and Wellness [https://www.ccny.cuny.edu/health-wellness](https://www.ccny.cuny.edu/health-wellness)    
 * Student Affairs [https://www.ccny.cuny.edu/studentaffairs](https://www.ccny.cuny.edu/studentaffairs)    
 * Counseling Center [https://www.ccny.cuny.edu/counseling](https://www.ccny.cuny.edu/counseling)   
 * Writing Center [https://www.ccny.cuny.edu/writing](https://www.ccny.cuny.edu/writing)   
-* IT Resources [cny.cuny.edu/it/services-students](http://cny.cuny.edu/it/services-students)   
+* IT Resources [http://www.ccny.cuny.edu/it/services-students](http://www.ccny.cuny.edu/it/services-students)
 * Athletics and Campus Fitness [https://www.ccny.cuny.edu/studentaffairs/recreation-schedule](https://www.ccny.cuny.edu/studentaffairs/recreation-schedule)   
 * Zahn Innovation Center for Entrepreneurship [https://www.ccny.cuny.edu/zahn](https://www.ccny.cuny.edu/zahn)   
 * Career and Professional Development Institute [https://www.ccny.cuny.edu/cpdi](https://www.ccny.cuny.edu/cpdi)   
