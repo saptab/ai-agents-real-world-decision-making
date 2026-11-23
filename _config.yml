@@ -38,6 +38,7 @@ excerpt_separator: "<!--more-->"
 include: ['_images', '_css']
 exclude: ['develop']
 
+timezone: America/New_York
 dateformat: "%m/%d/%Y"
 
 future: true
