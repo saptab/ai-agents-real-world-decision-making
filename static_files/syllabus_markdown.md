@@ -55,7 +55,7 @@ The second semester (Fall 2026\) will focus on implementation and scale up the b
 2. Rollout, Policy Iteration, and Distributed Reinforcement Learning by Dimitri P. Bertsekas, 2020 [https://web.mit.edu/dimitrib/www/dp\_rollout\_book.html](https://web.mit.edu/dimitrib/www/dp_rollout_book.html) \+ [https://web.mit.edu/dimitrib/www/Rollout\_Complete%20Book.pdf](https://web.mit.edu/dimitrib/www/Rollout_Complete%20Book.pdf)   
 3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/\#download](https://www.marl-book.com/#download)   
 4. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 (including video lectures) [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html) \+ [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)   
-5. Deep Learning by Ian Goodfellow, 2016 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)
+5. Deep Learning by Ian Goodfellow, 2016 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)   
 6. An Introduction to Multi-Agent Systems by Michael Wooldridge, 2001  [https://uranos.ch/research/references/Wooldridge\_2001/TLTK.pdf](https://uranos.ch/research/references/Wooldridge_2001/TLTK.pdf)   
 7. 6G Flagship Book, 2023 [https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/](https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/)   
 8. Selected open-source research papers will be provided by the Professor
@@ -93,7 +93,7 @@ The second semester (Fall 2026\) will focus on implementation and scale up the b
 
 – Background
 
-1. Probability: Introduction to Probability for Computing by Mor Harchol Balter, 2024 [https://www.cs.cmu.edu/\~harchol/Probability/chapters/HarcholBalterWholeBook.pdf](https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf)   
+1. Probability: Introduction to Probability for Computing by Mor Harchol Balter, 2024 [https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf](https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf)   
 2. Mathematics for Machine Learning by Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong, 2020 [https://mml-book.github.io/book/mml-book.pdf](https://mml-book.github.io/book/mml-book.pdf)   
 3. Convex Optimization for Statistics and Machine Learning, Volume 1: Analysis by Ryan Tibshirani 2025 [https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf](https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf)   
 4. An Introduction to Statistical Learning with Python by Garreth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, 2023 [https://www.statlearning.com/](https://www.statlearning.com/) 
@@ -123,7 +123,7 @@ Specific subtopics discussed in a class will be mentioned in the syllabus to hel
 | :---- | :---- | :---- |
 | **Aug 31** | Introduction: Implementing AI Agents in the Real and Virtual World |  |
 | **Sep 2** | Scientific Discovery and Autonomous Task Exploration |  |
-| **Sep 7** | Labor Day Holiday at CCNY, CUNY   |  |
+| **Sep 7** | Labor Day Holiday at CCNY, CUNY    |  |
 | **Sep 9** | Transitioning from Prototyping to Implementation: Expanding Algorithms to Real-World Scale |  |
 | **Sep 14** | System-Level Parameters: Optimizing Latency, Memory Inflation, and Network Bandwidth |  |
 | **Sep 16** | System-Level Parameters: Energy Utilization, Smart Grids, and Power Infrastructure |  |
@@ -133,26 +133,26 @@ Specific subtopics discussed in a class will be mentioned in the syllabus to hel
 | **Sep 30** | Advanced Topics: Biomaterials, Cellular Biology Simulations, and Disease Modeling |  |
 | **Oct 5** | Advanced Topics: Financial Agents, Stock Portfolio Orchestration, and Trading |  |
 | **Oct 7** | Advanced Topics: Real-World Supply Chain Logistics and Orchestration |  |
-| **Oct 13** *(Follows Monday Schedule)* | Advanced Topics: Drone Swarms, Autonomous Vehicles, and Transportation  Advanced Topics: Augmented Reality (AR/VR/XR) and Hardware Agents |  |
-| **Oct 14** | **New Developments:** Quantum Control Mechanisms and Non-Deterministic AI | MidTerm Exam Project Presentation with 1-page slide Due |
+| **Oct 13** *(Follows Monday Schedule)* | Advanced Topics: Drone Swarms, Autonomous Vehicles, and Transportation<br>Advanced Topics: Augmented Reality (AR/VR/XR) and Hardware Agents |  |
+| **Oct 14** | **New Developments:** Quantum Control Mechanisms and Non-Deterministic AI | In-Person Exam on Project Presentation Pitch with 1-page slide Due |
 | **Oct 19** | Navigating Open-Ended Problems, Establishing New Metrics, and Reliability |  |
-| **Oct 21** | MidTerm Exam Project Presentations (Part I) | MidTerm Exam Project 1-page abstract report Due on **Oct 23** |
-| **Oct 26** | MidTerm Exam Project Presentations (Part II) | In-Class Classwork 2 |
-| **Oct 28** | Scaling Up: Distributed Processing and B200 GPU Utilization on Empire AI | **Bi-Weekly** Research Project Update 1 Due on **Oct 28** |
-| **Nov 2** | Guest Lecture: Perspectives from Industry and Big Tech |  |
-| **Nov 4** | Guest Lecture: Perspectives from Academia, National Labs, and Defense |  |
-| **Nov 9** | Troubleshooting Implementations: Overcoming the "Moravec's Paradox" in Robotics |  |
-| **Nov 11** | Trust and Alignment: Preventing Reward Hacking and Pathological Agent Optimizations | **Bi-Weekly** Research Project Update 2 Due on **Nov 11** |
-| **Nov 16** | Open-Source Licensing, Hugging Face Integration, and Deployment Strategies |  |
-| **Nov 18** | Future Horizons: Interstellar Internet and Advanced Sensing Networks | In-Class Classwork 3 |
-| **Nov 23** | Hands-On Coding Lab / Project Troubleshooting | **Bi-Weekly** Research Project Update 3 Due on **Nov 23** |
+| **Oct 21** | Scaling Multi-Agent AI problems with Distributed Learning | MidTerm Exam Project 1-page abstract report Due on **Oct 23** |
+| **Oct 26** | Scaling Multi-Agent AI problems: Modern Distributed Systems and JAX | In-Class Classwork 2 |
+| **Oct 28** | Coalition of Data and AI Agents with Game Theory | **Bi-Weekly** Research Project Update 1 Due on **Oct 28** |
+| **Nov 2** | Troubleshooting Implementations: Overcoming the "Moravec's Paradox" in Robotics |  |
+| **Nov 4** | Trust and Alignment: Preventing Reward Hacking and Pathological Agent Optimizations |  |
+| **Nov 9** | Open-Source Licensing, Hugging Face Integration, and Deployment Strategies |  |
+| **Nov 11** | Future Horizons: Interstellar Internet and Advanced Sensing Networks | **Bi-Weekly** Research Project Update 2 Due on **Nov 11** |
+| **Nov 16** | Mid-Term Project Progress Pitch in 4 minutes<br>Hands-On Coding Lab / Project Troubleshooting | In-Person Exam on Mid-Term Project Progress Pitch on Nov 16 with 4-page slides Due on Nov 15 |
+| **Nov 18** | Agent Modeling, Belief Propagation, and the Value of Information (VOI) |  |
+| **Nov 23** | Centralized Training De-Centralized Execution Frameworks for Multi-Agent Systems | **Bi-Weekly** Research Project Update 3 Due on **Nov 23** |
 | **Nov 25** | No Classes Scheduled (**Thanksgiving Recess**) |  |
-| **Nov 30** | Finalizing 8-Page Research Reports and LaTeX Formatting | **Bi-Weekly** Research Project Update 4 Due on **Nov 30** |
-| **Dec 2** | Course Wrap-up: Preparing for Job Interviews, Graduate School, and Academic Milestones |  |
+| **Nov 30** | Course Wrap-up: Preparing for Job Interviews, Graduate School, and Academic Milestones | **Bi-Weekly** Research Project Update 4 Due on **Nov 30** |
+| **Dec 2** | Finalizing 8-Page Research Reports and LaTeX Formatting | In-Class Classwork 3 |
 | **Dec 7** | Final Project Troubleshooting and Presentation Prep |  |
-| **Dec 9** | Final Exam Class Research Project Presentations (Part I) | **Bi-Weekly** Research Project Update 5 Due on **Dec 9** |
-| **Dec 14** | Final Exam Class Research Project Presentations (Part II) | Final Presentations and Code Due. Attendance is mandatory for all students. |
-| **Dec 15–21** | Final Exam Week Class Research Project Report | Final Project Report (8-pages) and Final Code Due on Final Exam Week (Specific Date TBA) |
+| **Dec 9** | Final Exam Class Research Project Presentations (Part I) | **Bi-Weekly** Research Project Update 5 Due on **Dec 9**<br>**Final Presentation Slides Due by December 8**<br>Attendance is mandatory for all students on Dec 9\. |
+| **Dec 14** | Final Exam Class Research Project Presentations (Part II) | Attendance is mandatory for all students on Dec 14\. |
+| **Dec 15–21** | Final Exam Week Class Research Project Report | **Final Project Report (8-pages) Due by December 8**<br>**Final Code, Data and Artifacts Due by December 15** |
 
 – **Late Policy**  
 	– Delays in Assignment submission will lead to a deduction of 10% every day the assignment is delayed leading to a 0 if assignment is submitted 10 days after submission deadline. If an assignment is out of 100, a delayed submission will lead to a grade out of 90 points on Day 1, 80 points on Day 2 and so on.
@@ -268,12 +268,12 @@ Each student in the team has to clearly outline their individual research tasks 
 
 –  **CUNY CCNY Resources** 
 
-* Accessibility [https://www.ccny.cuny.edu/accessability](https://www.ccny.cuny.edu/accessability)
+* Accessibility [https://www.ccny.cuny.edu/accessability](https://www.ccny.cuny.edu/accessability)   
 * Health and Wellness [https://www.ccny.cuny.edu/health-wellness](https://www.ccny.cuny.edu/health-wellness)    
 * Student Affairs [https://www.ccny.cuny.edu/studentaffairs](https://www.ccny.cuny.edu/studentaffairs)    
 * Counseling Center [https://www.ccny.cuny.edu/counseling](https://www.ccny.cuny.edu/counseling)   
 * Writing Center [https://www.ccny.cuny.edu/writing](https://www.ccny.cuny.edu/writing)   
-* IT Resources [http://www.ccny.cuny.edu/it/services-students](http://www.ccny.cuny.edu/it/services-students)
+* IT Resources [http://www.ccny.cuny.edu/it/services-students](http://www.ccny.cuny.edu/it/services-students)   
 * Athletics and Campus Fitness [https://www.ccny.cuny.edu/studentaffairs/recreation-schedule](https://www.ccny.cuny.edu/studentaffairs/recreation-schedule)   
 * Zahn Innovation Center for Entrepreneurship [https://www.ccny.cuny.edu/zahn](https://www.ccny.cuny.edu/zahn)   
 * Career and Professional Development Institute [https://www.ccny.cuny.edu/cpdi](https://www.ccny.cuny.edu/cpdi)   
@@ -347,4 +347,3 @@ Academic integrity is at the core of a college or university education. Faculty 
 5. Implementation  
    Each college shall implement this Policy and may adopt its own more specific procedures to implement the Policy. Colleges’ procedures must be consistent with the policy and procedures described in the Policy. **CUNY BOT adopted a revised “Policy on Academic Integrity” on June 27, 2011, which went into effect on July 1, 2011 (6.27.2011.Cal.5.L). Amended and replaced on June 27, 2022\. (6.27.2022. No. 4.F.)**  
    **EXPLANATION** Revision to the 2022 Academic Integrity Policy is necessary because the current policy does not address the advent of Artificial Intelligence and its use by students at CUNY.Preparing students to learn from and use AI responsibly and ethically is critical to the University’s mission, to ensuring academic integrity, to securing the rigor of the University’s academic programs.Further, students must become facile with the use of AI to learn effectively in today’s world and to prepare for their AI-assisted careers and lives in the future.
-
