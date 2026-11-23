@@ -51,52 +51,52 @@ The second semester (Fall 2026\) will focus on implementation and scale up the b
 
 – Free Text Books
 
-1. Parallel and Distributed Computation: Numerical Methods by Dimitri P. Bertsekas and John N. Tsitsiklis, 2018 [https://web.mit.edu/dimitrib/www/pdc.html  http://www.athenasc.com/pdcbook.pdf](https://web.mit.edu/dimitrib/www/pdc.html)   
-2. Rollout, Policy Iteration, and Distributed Reinforcement Learning by Dimitri P. Bertsekas, 2020 [https://web.mit.edu/dimitrib/www/dp\_rollout\_book.html](https://web.mit.edu/dimitrib/www/dp_rollout_book.html) \+ [https://web.mit.edu/dimitrib/www/Rollout\_Complete%20Book.pdf](https://web.mit.edu/dimitrib/www/Rollout_Complete%20Book.pdf)   
-3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https://www.marl-book.com/\#download](https://www.marl-book.com/#download)   
-4. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 (including video lectures) [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html) \+ [https://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)   
-5. Deep Learning by Ian Goodfellow, 2016 [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/)   
-6. An Introduction to Multi-Agent Systems by Michael Wooldridge, 2001  [https://uranos.ch/research/references/Wooldridge\_2001/TLTK.pdf](https://uranos.ch/research/references/Wooldridge_2001/TLTK.pdf)   
-7. 6G Flagship Book, 2023 [https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/](https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/)   
+1. Parallel and Distributed Computation: Numerical Methods by Dimitri P. Bertsekas and John N. Tsitsiklis, 2018 [https\://web.mit.edu/dimitrib/www/pdc.html  http\://www\.athenasc.com/pdcbook.pdf](https://web.mit.edu/dimitrib/www/pdc.html)   
+2. Rollout, Policy Iteration, and Distributed Reinforcement Learning by Dimitri P. Bertsekas, 2020 [https\://web.mit.edu/dimitrib/www/dp\_rollout\_book.html](https://web.mit.edu/dimitrib/www/dp_rollout_book.html) \+ [https\://web.mit.edu/dimitrib/www/Rollout\_Complete%20Book.pdf](https://web.mit.edu/dimitrib/www/Rollout_Complete%20Book.pdf)   
+3. Multi-Agent Reinforcement Learning Book by Stefano Albrecht, 2024 [https\://www\.marl-book.com/\#download](https://www.marl-book.com/#download)   
+4. Reinforcement Learning by Dimitri P. Bertsekas, 2025 and 2019 (including video lectures) [https\://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html) \+ [https\://web.mit.edu/dimitrib/www/RLbook.html](https://web.mit.edu/dimitrib/www/RLbook.html)   
+5. Deep Learning by Ian Goodfellow, 2016 [https\://www\.deeplearningbook.org/](https://www.deeplearningbook.org/)   
+6. An Introduction to Multi-Agent Systems by Michael Wooldridge, 2001  [https\://uranos.ch/research/references/Wooldridge\_2001/TLTK.pdf](https://uranos.ch/research/references/Wooldridge_2001/TLTK.pdf)   
+7. 6G Flagship Book, 2023 [https\://www\.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/](https://www.6gflagship.com/news/unveiling-the-digital-horizon-new-book-on-5g-6g-and-future-digital-services-released/)   
 8. Selected open-source research papers will be provided by the Professor
 
 – Open-Access JAX Learning Resources
 
-1. JAX 101 Tutorial [https://docs.jax.dev/en/latest/jax-101.html](https://docs.jax.dev/en/latest/jax-101.html)   
-2. JAX Tutorials (including JAX 201 and JAX 301\) [https://docs.jax.dev/en/latest/\_tutorials/index.html](https://docs.jax.dev/en/latest/_tutorials/index.html)   
-3. JAX Documentation [https://docs.jax.dev/en/latest/jax.html?spm=a2c6h.13046898.publish-article.21.6f9f6ffaIymbyj](https://docs.jax.dev/en/latest/jax.html?spm=a2c6h.13046898.publish-article.21.6f9f6ffaIymbyj)   
-4. JAXMARL [https://github.com/FLAIROx/JaxMARL](https://github.com/FLAIROx/JaxMARL) 
+1. JAX 101 Tutorial [https\://docs.jax.dev/en/latest/jax-101.html](https://docs.jax.dev/en/latest/jax-101.html)   
+2. JAX Tutorials (including JAX 201 and JAX 301\) [https\://docs.jax.dev/en/latest/\_tutorials/index.html](https://docs.jax.dev/en/latest/_tutorials/index.html)   
+3. JAX Documentation [https\://docs.jax.dev/en/latest/jax.html?spm=a2c6h.13046898.publish-article.21.6f9f6ffaIymbyj](https://docs.jax.dev/en/latest/jax.html?spm=a2c6h.13046898.publish-article.21.6f9f6ffaIymbyj)   
+4. JAXMARL [https\://github.com/FLAIROx/JaxMARL](https://github.com/FLAIROx/JaxMARL) 
 
 – Open-Source LaTeX Coding Resources for Report Writing
 
-1. LaTeX tutorial on Overleaf [https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)   
-2. TeXStudio [https://texstudio-org.github.io/getting\_started.html](https://texstudio-org.github.io/getting_started.html) 
+1. LaTeX tutorial on Overleaf [https\://www\.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)   
+2. TeXStudio [https\://texstudio-org.github.io/getting\_started.html](https://texstudio-org.github.io/getting_started.html) 
 
 – Open-Source Coding Resources
 
-1. HuggingFace Transformers coding library [https://huggingface.co/docs/transformers/en/index](https://huggingface.co/docs/transformers/en/index)   
+1. HuggingFace Transformers coding library [https\://huggingface.co/docs/transformers/en/index](https://huggingface.co/docs/transformers/en/index)   
 2. PyTorch Lightning  
-   1. Lightning [https://lightning.ai/docs/pytorch/stable/](https://lightning.ai/docs/pytorch/stable/)   
-   2. Lightning’s github repository [https://github.com/Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)   
-   3. Pypi package [https://pypi.org/project/pytorch-lightning/](https://pypi.org/project/pytorch-lightning/)   
+   1. Lightning [https\://lightning.ai/docs/pytorch/stable/](https://lightning.ai/docs/pytorch/stable/)   
+   2. Lightning’s github repository [https\://github.com/Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)   
+   3. Pypi package [https\://pypi.org/project/pytorch-lightning/](https://pypi.org/project/pytorch-lightning/)   
 3. Gymnasium coding library   
-   1. Gymnasium on Farama [https://gymnasium.farama.org/index.html](https://gymnasium.farama.org/index.html)   
-   2. Farama’s github repository [https://github.com/Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium)   
-4. Python multiprocessing coding library [https://docs.python.org/3/library/multiprocessing.html](https://docs.python.org/3/library/multiprocessing.html)   
-5. HuggingFace Deep Reinforcement Learning Materials [https://huggingface.co/learn/deep-rl-course/en/unit0/introduction](https://huggingface.co/learn/deep-rl-course/en/unit0/introduction) Github: [https://github.com/huggingface/deep-rl-class](https://github.com/huggingface/deep-rl-class)   
-6. HuggingFace AI Agents Materials [https://huggingface.co/learn/agents-course/en/unit0/introduction](https://huggingface.co/learn/agents-course/en/unit0/introduction) Github: [https://github.com/huggingface/agents-course](https://github.com/huggingface/agents-course) 
+   1. Gymnasium on Farama [https\://gymnasium.farama.org/index.html](https://gymnasium.farama.org/index.html)   
+   2. Farama’s github repository [https\://github.com/Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium)   
+4. Python multiprocessing coding library [https\://docs.python.org/3/library/multiprocessing.html](https://docs.python.org/3/library/multiprocessing.html)   
+5. HuggingFace Deep Reinforcement Learning Materials [https\://huggingface.co/learn/deep-rl-course/en/unit0/introduction](https://huggingface.co/learn/deep-rl-course/en/unit0/introduction) Github: [https\://github.com/huggingface/deep-rl-class](https://github.com/huggingface/deep-rl-class)   
+6. HuggingFace AI Agents Materials [https\://huggingface.co/learn/agents-course/en/unit0/introduction](https://huggingface.co/learn/agents-course/en/unit0/introduction) Github: [https\://github.com/huggingface/agents-course](https://github.com/huggingface/agents-course) 
 
 – Open-source Unit Testing Resources
 
-1. Python unittest package [https://docs.python.org/3/library/unittest.html](https://docs.python.org/3/library/unittest.html)  
-2. Python pytest package [https://pytest.org/](https://pytest.org/)
+1. Python unittest package [https\://docs.python.org/3/library/unittest.html](https://docs.python.org/3/library/unittest.html)  
+2. Python pytest package [https\://pytest.org/](https://pytest.org/)
 
 – Background
 
-1. Probability: Introduction to Probability for Computing by Mor Harchol Balter, 2024 [https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf](https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf)   
-2. Mathematics for Machine Learning by Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong, 2020 [https://mml-book.github.io/book/mml-book.pdf](https://mml-book.github.io/book/mml-book.pdf)   
-3. Convex Optimization for Statistics and Machine Learning, Volume 1: Analysis by Ryan Tibshirani 2025 [https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf](https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf)   
-4. An Introduction to Statistical Learning with Python by Garreth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, 2023 [https://www.statlearning.com/](https://www.statlearning.com/) 
+1. Probability: Introduction to Probability for Computing by Mor Harchol Balter, 2024 [https\://www\.cs.cmu.edu/\~harchol/Probability/chapters/HarcholBalterWholeBook.pdf](https://www.cs.cmu.edu/~harchol/Probability/chapters/HarcholBalterWholeBook.pdf)   
+2. Mathematics for Machine Learning by Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong, 2020 [https\://mml-book.github.io/book/mml-book.pdf](https://mml-book.github.io/book/mml-book.pdf)   
+3. Convex Optimization for Statistics and Machine Learning, Volume 1: Analysis by Ryan Tibshirani 2025 [https\://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf](https://github.com/ryantibs/convexopt-book1/blob/main/book1.pdf)   
+4. An Introduction to Statistical Learning with Python by Garreth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, 2023 [https\://www\.statlearning.com/](https://www.statlearning.com/) 
 
 – Empire AI Compute Access
 
@@ -107,7 +107,7 @@ The second semester (Fall 2026\) will focus on implementation and scale up the b
 – You can run the Jupyter Notebook for Coding Assignments and Projects.
 
 1. The easiest way to run these accounts is creating a gmail account quicky with your name (student\_name)@gmail.com as Google Colab offers free compute on Cloud to run experiments  
-2. If you want to install Jupyter locally (local installation is not mandatory as Colab is easy to write development code on), follow the steps here [https://docs.jupyter.org/en/latest/running.html](https://docs.jupyter.org/en/latest/running.html)
+2. If you want to install Jupyter locally (local installation is not mandatory as Colab is easy to write development code on), follow the steps here [https\://docs.jupyter.org/en/latest/running.html](https://docs.jupyter.org/en/latest/running.html)
 
 **Feedback and Communication:**
 
@@ -123,7 +123,7 @@ Specific subtopics discussed in a class will be mentioned in the syllabus to hel
 | :---- | :---- | :---- |
 | **Aug 31** | Introduction: Implementing AI Agents in the Real and Virtual World |  |
 | **Sep 2** | Scientific Discovery and Autonomous Task Exploration |  |
-| **Sep 7** | Labor Day Holiday at CCNY, CUNY    |  |
+| **Sep 7** | Labor Day Holiday at CCNY, CUNY   |  |
 | **Sep 9** | Transitioning from Prototyping to Implementation: Expanding Algorithms to Real-World Scale |  |
 | **Sep 14** | System-Level Parameters: Optimizing Latency, Memory Inflation, and Network Bandwidth |  |
 | **Sep 16** | System-Level Parameters: Energy Utilization, Smart Grids, and Power Infrastructure |  |
@@ -133,7 +133,7 @@ Specific subtopics discussed in a class will be mentioned in the syllabus to hel
 | **Sep 30** | Advanced Topics: Biomaterials, Cellular Biology Simulations, and Disease Modeling |  |
 | **Oct 5** | Advanced Topics: Financial Agents, Stock Portfolio Orchestration, and Trading |  |
 | **Oct 7** | Advanced Topics: Real-World Supply Chain Logistics and Orchestration |  |
-| **Oct 13** *(Follows Monday Schedule)* | Advanced Topics: Drone Swarms, Autonomous Vehicles, and Transportation<br>Advanced Topics: Augmented Reality (AR/VR/XR) and Hardware Agents |  |
+| **Oct 13** *(Follows Monday Schedule)* | Advanced Topics: Drone Swarms, Autonomous Vehicles, and Transportation  Advanced Topics: Augmented Reality (AR/VR/XR) and Hardware Agents |  |
 | **Oct 14** | **New Developments:** Quantum Control Mechanisms and Non-Deterministic AI | In-Person Exam on Project Presentation Pitch with 1-page slide Due |
 | **Oct 19** | Navigating Open-Ended Problems, Establishing New Metrics, and Reliability |  |
 | **Oct 21** | Scaling Multi-Agent AI problems with Distributed Learning | MidTerm Exam Project 1-page abstract report Due on **Oct 23** |
@@ -143,16 +143,16 @@ Specific subtopics discussed in a class will be mentioned in the syllabus to hel
 | **Nov 4** | Trust and Alignment: Preventing Reward Hacking and Pathological Agent Optimizations |  |
 | **Nov 9** | Open-Source Licensing, Hugging Face Integration, and Deployment Strategies |  |
 | **Nov 11** | Future Horizons: Interstellar Internet and Advanced Sensing Networks | **Bi-Weekly** Research Project Update 2 Due on **Nov 11** |
-| **Nov 16** | Mid-Term Project Progress Pitch in 4 minutes<br>Hands-On Coding Lab / Project Troubleshooting | In-Person Exam on Mid-Term Project Progress Pitch on Nov 16 with 4-page slides Due on Nov 15 |
+| **Nov 16** | Mid-Term Project Progress Pitch in 4 minutes Hands-On Coding Lab / Project Troubleshooting | In-Person Exam on Mid-Term Project Progress Pitch on Nov 16 with 4-page slides Due on Nov 15 |
 | **Nov 18** | Agent Modeling, Belief Propagation, and the Value of Information (VOI) |  |
 | **Nov 23** | Centralized Training De-Centralized Execution Frameworks for Multi-Agent Systems | **Bi-Weekly** Research Project Update 3 Due on **Nov 23** |
 | **Nov 25** | No Classes Scheduled (**Thanksgiving Recess**) |  |
 | **Nov 30** | Course Wrap-up: Preparing for Job Interviews, Graduate School, and Academic Milestones | **Bi-Weekly** Research Project Update 4 Due on **Nov 30** |
 | **Dec 2** | Finalizing 8-Page Research Reports and LaTeX Formatting | In-Class Classwork 3 |
 | **Dec 7** | Final Project Troubleshooting and Presentation Prep |  |
-| **Dec 9** | Final Exam Class Research Project Presentations (Part I) | **Bi-Weekly** Research Project Update 5 Due on **Dec 9**<br>**Final Presentation Slides Due by December 8**<br>Attendance is mandatory for all students on Dec 9\. |
+| **Dec 9** | Final Exam Class Research Project Presentations (Part I) | **Bi-Weekly** Research Project Update 5 Due on **Dec 9 Final Presentation Slides Due by December 8** Attendance is mandatory for all students on Dec 9\. |
 | **Dec 14** | Final Exam Class Research Project Presentations (Part II) | Attendance is mandatory for all students on Dec 14\. |
-| **Dec 15–21** | Final Exam Week Class Research Project Report | **Final Project Report (8-pages) Due by December 8**<br>**Final Code, Data and Artifacts Due by December 15** |
+| **Dec 15–21** | Final Exam Week Class Research Project Report | **Final Project Report (8-pages) Due by December 15**  **Final Code, Data and Artifacts Due by December 15** |
 
 – **Late Policy**  
 	– Delays in Assignment submission will lead to a deduction of 10% every day the assignment is delayed leading to a 0 if assignment is submitted 10 days after submission deadline. If an assignment is out of 100, a delayed submission will lead to a grade out of 90 points on Day 1, 80 points on Day 2 and so on.
@@ -268,25 +268,25 @@ Each student in the team has to clearly outline their individual research tasks 
 
 –  **CUNY CCNY Resources** 
 
-* Accessibility [https://www.ccny.cuny.edu/accessability](https://www.ccny.cuny.edu/accessability)   
-* Health and Wellness [https://www.ccny.cuny.edu/health-wellness](https://www.ccny.cuny.edu/health-wellness)    
-* Student Affairs [https://www.ccny.cuny.edu/studentaffairs](https://www.ccny.cuny.edu/studentaffairs)    
-* Counseling Center [https://www.ccny.cuny.edu/counseling](https://www.ccny.cuny.edu/counseling)   
-* Writing Center [https://www.ccny.cuny.edu/writing](https://www.ccny.cuny.edu/writing)   
-* IT Resources [http://www.ccny.cuny.edu/it/services-students](http://www.ccny.cuny.edu/it/services-students)   
-* Athletics and Campus Fitness [https://www.ccny.cuny.edu/studentaffairs/recreation-schedule](https://www.ccny.cuny.edu/studentaffairs/recreation-schedule)   
-* Zahn Innovation Center for Entrepreneurship [https://www.ccny.cuny.edu/zahn](https://www.ccny.cuny.edu/zahn)   
-* Career and Professional Development Institute [https://www.ccny.cuny.edu/cpdi](https://www.ccny.cuny.edu/cpdi)   
-* MS Resources [https://www.ccny.cuny.edu/admissions/graduate-studies-application](https://www.ccny.cuny.edu/admissions/graduate-studies-application)   
-* PhD Resources [https://www.gc.cuny.edu/admissions-aid/how-apply](https://www.gc.cuny.edu/admissions-aid/how-apply) and [https://welcome.gc.cuny.edu/apply/](https://welcome.gc.cuny.edu/apply/)   
-* PhD Research [https://www.gc.cuny.edu/computer-science/faculty-and-committees](https://www.gc.cuny.edu/computer-science/faculty-and-committees)   
-* Interuniversity Doctoral Consortium [https://www.gc.cuny.edu/academics/programs/interuniversity-doctoral-consortium](https://www.gc.cuny.edu/academics/programs/interuniversity-doctoral-consortium) 
+* Accessibility [https\://www\.ccny.cuny.edu/accessability](https://www.ccny.cuny.edu/accessability)   
+* Health and Wellness [https\://www\.ccny.cuny.edu/health-wellness](https://www.ccny.cuny.edu/health-wellness)    
+* Student Affairs [https\://www\.ccny.cuny.edu/studentaffairs](https://www.ccny.cuny.edu/studentaffairs)    
+* Counseling Center [https\://www\.ccny.cuny.edu/counseling](https://www.ccny.cuny.edu/counseling)   
+* Writing Center [https\://www\.ccny.cuny.edu/writing](https://www.ccny.cuny.edu/writing)   
+* IT Resources [http\://www\.ccny.cuny.edu/it/services-students](http://www.ccny.cuny.edu/it/services-students)   
+* Athletics and Campus Fitness [https\://www\.ccny.cuny.edu/studentaffairs/recreation-schedule](https://www.ccny.cuny.edu/studentaffairs/recreation-schedule)   
+* Zahn Innovation Center for Entrepreneurship [https\://www\.ccny.cuny.edu/zahn](https://www.ccny.cuny.edu/zahn)   
+* Career and Professional Development Institute [https\://www\.ccny.cuny.edu/cpdi](https://www.ccny.cuny.edu/cpdi)   
+* MS Resources [https\://www\.ccny.cuny.edu/admissions/graduate-studies-application](https://www.ccny.cuny.edu/admissions/graduate-studies-application)   
+* PhD Resources [https\://www\.gc.cuny.edu/admissions-aid/how-apply](https://www.gc.cuny.edu/admissions-aid/how-apply) and [https\://welcome.gc.cuny.edu/apply/](https://welcome.gc.cuny.edu/apply/)   
+* PhD Research [https\://www\.gc.cuny.edu/computer-science/faculty-and-committees](https://www.gc.cuny.edu/computer-science/faculty-and-committees)   
+* Interuniversity Doctoral Consortium [https\://www\.gc.cuny.edu/academics/programs/interuniversity-doctoral-consortium](https://www.gc.cuny.edu/academics/programs/interuniversity-doctoral-consortium) 
 
 – **University Policies**
 
-– CUNY Academic Integrity Policy [https://www.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/](https://www.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/) 
+– CUNY Academic Integrity Policy [https\://www\.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/](https://www.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/) 
 
-Academic dishonesty is prohibited in The City University of New York. Penalties for academic dishonesty include academic sanctions, such as failing or otherwise reduced grades, and/or disciplinary sanctions, including suspension or expulsion. [https://www.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/](https://www.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/) 
+Academic dishonesty is prohibited in The City University of New York. Penalties for academic dishonesty include academic sanctions, such as failing or otherwise reduced grades, and/or disciplinary sanctions, including suspension or expulsion. [https\://www\.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/](https://www.cuny.edu/about/administration/offices/legal-affairs/policies-resources/academic-integrity-policy/) 
 
 Academic integrity is at the core of a college or university education. Faculty assign essays, exams, quizzes, projects, and so on both to extend the learning done in the classroom and as a means of assessing that learning. When students violate the academic integrity policy (i.e., “cheat”), they are committing an act of theft that can cause real harm to themselves and others including, but not limited to, their classmates, their faculty, and the caregivers who may be funding their education. Academic dishonesty confers an unfair advantage over others, which undermines educational equity and fairness. Students who cheat place their college’s accreditation and their own future prospects in jeopardy.
 
@@ -347,3 +347,4 @@ Academic integrity is at the core of a college or university education. Faculty 
 5. Implementation  
    Each college shall implement this Policy and may adopt its own more specific procedures to implement the Policy. Colleges’ procedures must be consistent with the policy and procedures described in the Policy. **CUNY BOT adopted a revised “Policy on Academic Integrity” on June 27, 2011, which went into effect on July 1, 2011 (6.27.2011.Cal.5.L). Amended and replaced on June 27, 2022\. (6.27.2022. No. 4.F.)**  
    **EXPLANATION** Revision to the 2022 Academic Integrity Policy is necessary because the current policy does not address the advent of Artificial Intelligence and its use by students at CUNY.Preparing students to learn from and use AI responsibly and ethically is critical to the University’s mission, to ensuring academic integrity, to securing the rigor of the University’s academic programs.Further, students must become facile with the use of AI to learn effectively in today’s world and to prepare for their AI-assisted careers and lives in the future.
+
